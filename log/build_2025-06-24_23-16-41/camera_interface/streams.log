@@ -1,0 +1,10 @@
+[2.996s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/build/camera_interface': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/camera_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build --no-deps symlink_data
+[3.788s] running develop
+[4.270s] running egg_info
+[4.305s] writing camera_interface.egg-info/PKG-INFO
+[4.306s] writing dependency_links to camera_interface.egg-info/dependency_links.txt
+[4.307s] writing entry points to camera_interface.egg-info/entry_points.txt
+[4.308s] writing requirements to camera_interface.egg-info/requires.txt
+[4.308s] writing top-level names to camera_interface.egg-info/top_level.txt
+[4.358s] error: package directory 'camera_interface' does not exist
+[4.474s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/build/camera_interface' returned '1': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/camera_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build --no-deps symlink_data

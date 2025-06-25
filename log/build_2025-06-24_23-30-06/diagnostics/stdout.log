@@ -1,0 +1,29 @@
+running develop
+running egg_info
+creating diagnostics.egg-info
+writing diagnostics.egg-info/PKG-INFO
+writing dependency_links to diagnostics.egg-info/dependency_links.txt
+writing entry points to diagnostics.egg-info/entry_points.txt
+writing requirements to diagnostics.egg-info/requires.txt
+writing top-level names to diagnostics.egg-info/top_level.txt
+writing manifest file 'diagnostics.egg-info/SOURCES.txt'
+reading manifest file 'diagnostics.egg-info/SOURCES.txt'
+writing manifest file 'diagnostics.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics.egg-link (link to .)
+Installing emergency_stop_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/bin
+Installing error_handler_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/bin
+Installing health_monitor_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/bin
+Installing logger_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/bin
+Installing network_monitor_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/bin
+Installing resource_monitor_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/bin
+Installing system_metrics_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/bin
+Installing watchdog_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/bin
+
+Installed /home/andrewlh/VSCode/ros2_ws/build/diagnostics
+running symlink_data
+creating /home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/ament_index
+creating /home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/ament_index/resource_index
+creating /home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/ament_index/resource_index/packages
+symbolically linking /home/andrewlh/VSCode/ros2_ws/build/diagnostics/resource/diagnostics -> /home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/ament_index/resource_index/packages
+symbolically linking /home/andrewlh/VSCode/ros2_ws/build/diagnostics/package.xml -> /home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/diagnostics

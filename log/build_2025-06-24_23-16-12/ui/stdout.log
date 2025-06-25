@@ -1,0 +1,7 @@
+running develop
+running egg_info
+writing ../../build/ui/ui.egg-info/PKG-INFO
+writing dependency_links to ../../build/ui/ui.egg-info/dependency_links.txt
+writing entry points to ../../build/ui/ui.egg-info/entry_points.txt
+writing requirements to ../../build/ui/ui.egg-info/requires.txt
+writing top-level names to ../../build/ui/ui.egg-info/top_level.txt

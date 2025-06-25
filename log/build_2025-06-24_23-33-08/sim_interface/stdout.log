@@ -1,0 +1,36 @@
+running develop
+Removing /home/andrewlh/VSCode/ros2_ws/install/sim_interface/lib/python3.12/site-packages/sim-interface.egg-link (link to .)
+running egg_info
+writing ../../build/sim_interface/sim_interface.egg-info/PKG-INFO
+writing dependency_links to ../../build/sim_interface/sim_interface.egg-info/dependency_links.txt
+writing entry points to ../../build/sim_interface/sim_interface.egg-info/entry_points.txt
+writing requirements to ../../build/sim_interface/sim_interface.egg-info/requires.txt
+writing top-level names to ../../build/sim_interface/sim_interface.egg-info/top_level.txt
+reading manifest file '../../build/sim_interface/sim_interface.egg-info/SOURCES.txt'
+writing manifest file '../../build/sim_interface/sim_interface.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/andrewlh/VSCode/ros2_ws/build/sim_interface/build
+creating /home/andrewlh/VSCode/ros2_ws/build/sim_interface/build/lib
+creating /home/andrewlh/VSCode/ros2_ws/build/sim_interface/build/lib/sim_interface
+copying sim_interface/__init__.py -> /home/andrewlh/VSCode/ros2_ws/build/sim_interface/build/lib/sim_interface
+copying sim_interface/sim_world_interface_node.py -> /home/andrewlh/VSCode/ros2_ws/build/sim_interface/build/lib/sim_interface
+copying sim_interface/simulator_node.py -> /home/andrewlh/VSCode/ros2_ws/build/sim_interface/build/lib/sim_interface
+running install
+running install_lib
+creating /home/andrewlh/VSCode/ros2_ws/install/sim_interface/lib/python3.12/site-packages/sim_interface
+copying /home/andrewlh/VSCode/ros2_ws/build/sim_interface/build/lib/sim_interface/__init__.py -> /home/andrewlh/VSCode/ros2_ws/install/sim_interface/lib/python3.12/site-packages/sim_interface
+copying /home/andrewlh/VSCode/ros2_ws/build/sim_interface/build/lib/sim_interface/sim_world_interface_node.py -> /home/andrewlh/VSCode/ros2_ws/install/sim_interface/lib/python3.12/site-packages/sim_interface
+copying /home/andrewlh/VSCode/ros2_ws/build/sim_interface/build/lib/sim_interface/simulator_node.py -> /home/andrewlh/VSCode/ros2_ws/install/sim_interface/lib/python3.12/site-packages/sim_interface
+byte-compiling /home/andrewlh/VSCode/ros2_ws/install/sim_interface/lib/python3.12/site-packages/sim_interface/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/andrewlh/VSCode/ros2_ws/install/sim_interface/lib/python3.12/site-packages/sim_interface/sim_world_interface_node.py to sim_world_interface_node.cpython-312.pyc
+byte-compiling /home/andrewlh/VSCode/ros2_ws/install/sim_interface/lib/python3.12/site-packages/sim_interface/simulator_node.py to simulator_node.cpython-312.pyc
+running install_data
+copying resource/sim_interface -> /home/andrewlh/VSCode/ros2_ws/install/sim_interface/share/ament_index/resource_index/packages
+copying package.xml -> /home/andrewlh/VSCode/ros2_ws/install/sim_interface/share/sim_interface
+running install_egg_info
+Copying ../../build/sim_interface/sim_interface.egg-info to /home/andrewlh/VSCode/ros2_ws/install/sim_interface/lib/python3.12/site-packages/sim_interface-0.1.0-py3.12.egg-info
+running install_scripts
+Installing sim_world_interface_node script to /home/andrewlh/VSCode/ros2_ws/install/sim_interface/bin
+Installing simulator_node script to /home/andrewlh/VSCode/ros2_ws/install/sim_interface/bin
+writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/sim_interface/install.log'

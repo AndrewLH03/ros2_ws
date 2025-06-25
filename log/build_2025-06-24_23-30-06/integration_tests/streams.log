@@ -1,0 +1,24 @@
+[5.833s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/build/integration_tests': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/integration_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/integration_tests/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/andrewlh/VSCode/ros2_ws/build/integration_tests/build --no-deps symlink_data
+[8.252s] running develop
+[8.252s] running egg_info
+[8.252s] creating integration_tests.egg-info
+[8.252s] writing integration_tests.egg-info/PKG-INFO
+[8.252s] writing dependency_links to integration_tests.egg-info/dependency_links.txt
+[8.252s] writing entry points to integration_tests.egg-info/entry_points.txt
+[8.253s] writing requirements to integration_tests.egg-info/requires.txt
+[8.253s] writing top-level names to integration_tests.egg-info/top_level.txt
+[8.253s] writing manifest file 'integration_tests.egg-info/SOURCES.txt'
+[8.253s] reading manifest file 'integration_tests.egg-info/SOURCES.txt'
+[8.253s] writing manifest file 'integration_tests.egg-info/SOURCES.txt'
+[8.253s] running build_ext
+[8.253s] Creating /home/andrewlh/VSCode/ros2_ws/install/integration_tests/lib/python3.12/site-packages/integration-tests.egg-link (link to .)
+[8.253s] Installing run_tests script to /home/andrewlh/VSCode/ros2_ws/install/integration_tests/bin
+[8.254s] 
+[8.255s] Installed /home/andrewlh/VSCode/ros2_ws/build/integration_tests
+[8.264s] running symlink_data
+[8.264s] creating /home/andrewlh/VSCode/ros2_ws/install/integration_tests/share/ament_index
+[8.264s] creating /home/andrewlh/VSCode/ros2_ws/install/integration_tests/share/ament_index/resource_index
+[8.264s] creating /home/andrewlh/VSCode/ros2_ws/install/integration_tests/share/ament_index/resource_index/packages
+[8.264s] symbolically linking /home/andrewlh/VSCode/ros2_ws/build/integration_tests/resource/integration_tests -> /home/andrewlh/VSCode/ros2_ws/install/integration_tests/share/ament_index/resource_index/packages
+[8.264s] symbolically linking /home/andrewlh/VSCode/ros2_ws/build/integration_tests/package.xml -> /home/andrewlh/VSCode/ros2_ws/install/integration_tests/share/integration_tests
+[8.404s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/build/integration_tests' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/integration_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/integration_tests/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/andrewlh/VSCode/ros2_ws/build/integration_tests/build --no-deps symlink_data

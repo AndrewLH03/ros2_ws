@@ -1,0 +1,20 @@
+running develop
+running egg_info
+writing cr3_interface.egg-info/PKG-INFO
+writing dependency_links to cr3_interface.egg-info/dependency_links.txt
+writing entry points to cr3_interface.egg-info/entry_points.txt
+writing requirements to cr3_interface.egg-info/requires.txt
+writing top-level names to cr3_interface.egg-info/top_level.txt
+reading manifest file 'cr3_interface.egg-info/SOURCES.txt'
+writing manifest file 'cr3_interface.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3-interface.egg-link (link to .)
+Installing cr3_controller_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/bin
+Installing hand_controller_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/bin
+Installing joint_state_publisher_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/bin
+Installing tf_broadcaster_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/bin
+
+Installed /home/andrewlh/VSCode/ros2_ws/build/cr3_interface
+running symlink_data
+symbolically linking /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/resource/cr3_interface -> /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/ament_index/resource_index/packages
+symbolically linking /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/package.xml -> /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/cr3_interface

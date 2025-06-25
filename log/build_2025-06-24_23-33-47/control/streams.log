@@ -1,0 +1,24 @@
+[3.844s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/control': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control build --build-base /home/andrewlh/VSCode/ros2_ws/build/control/build install --record /home/andrewlh/VSCode/ros2_ws/build/control/install.log --single-version-externally-managed install_data
+[4.823s] running egg_info
+[4.889s] writing ../../build/control/control.egg-info/PKG-INFO
+[4.891s] writing dependency_links to ../../build/control/control.egg-info/dependency_links.txt
+[4.895s] writing entry points to ../../build/control/control.egg-info/entry_points.txt
+[4.898s] writing requirements to ../../build/control/control.egg-info/requires.txt
+[4.900s] writing top-level names to ../../build/control/control.egg-info/top_level.txt
+[5.042s] reading manifest file '../../build/control/control.egg-info/SOURCES.txt'
+[5.043s] writing manifest file '../../build/control/control.egg-info/SOURCES.txt'
+[5.043s] running build
+[5.043s] running build_py
+[5.043s] running install
+[5.064s] running install_lib
+[5.137s] running install_data
+[5.138s] running install_egg_info
+[5.191s] removing '/home/andrewlh/VSCode/ros2_ws/install/control/lib/python3.12/site-packages/control-0.1.0-py3.12.egg-info' (and everything under it)
+[5.192s] Copying ../../build/control/control.egg-info to /home/andrewlh/VSCode/ros2_ws/install/control/lib/python3.12/site-packages/control-0.1.0-py3.12.egg-info
+[5.204s] running install_scripts
+[5.638s] Installing motion_planner_node script to /home/andrewlh/VSCode/ros2_ws/install/control/bin
+[5.644s] Installing pose_to_command_node script to /home/andrewlh/VSCode/ros2_ws/install/control/bin
+[5.650s] Installing teleop_node script to /home/andrewlh/VSCode/ros2_ws/install/control/bin
+[5.650s] Installing trajectory_executor_node script to /home/andrewlh/VSCode/ros2_ws/install/control/bin
+[5.650s] writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/control/install.log'
+[5.767s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/control' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control build --build-base /home/andrewlh/VSCode/ros2_ws/build/control/build install --record /home/andrewlh/VSCode/ros2_ws/build/control/install.log --single-version-externally-managed install_data

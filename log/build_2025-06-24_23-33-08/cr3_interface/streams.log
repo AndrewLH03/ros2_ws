@@ -1,0 +1,51 @@
+[4.229s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/build/cr3_interface': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/cr3_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build
+[5.035s] running develop
+[5.650s] Removing /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3-interface.egg-link (link to .)
+[5.777s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/build/cr3_interface' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/cr3_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build
+[5.779s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/cr3_interface': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/cr3_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cr3_interface build --build-base /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build install --record /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/install.log --single-version-externally-managed install_data --force
+[6.506s] running egg_info
+[6.558s] writing ../../build/cr3_interface/cr3_interface.egg-info/PKG-INFO
+[6.560s] writing dependency_links to ../../build/cr3_interface/cr3_interface.egg-info/dependency_links.txt
+[6.561s] writing entry points to ../../build/cr3_interface/cr3_interface.egg-info/entry_points.txt
+[6.561s] writing requirements to ../../build/cr3_interface/cr3_interface.egg-info/requires.txt
+[6.562s] writing top-level names to ../../build/cr3_interface/cr3_interface.egg-info/top_level.txt
+[6.695s] reading manifest file '../../build/cr3_interface/cr3_interface.egg-info/SOURCES.txt'
+[6.695s] writing manifest file '../../build/cr3_interface/cr3_interface.egg-info/SOURCES.txt'
+[6.695s] running build
+[6.696s] running build_py
+[6.696s] creating /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build
+[6.697s] creating /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build/lib
+[6.698s] creating /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build/lib/cr3_interface
+[6.703s] copying cr3_interface/__init__.py -> /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build/lib/cr3_interface
+[6.703s] copying cr3_interface/tf_broadcaster_node.py -> /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build/lib/cr3_interface
+[6.703s] copying cr3_interface/ip_to_ros_bridge_node.py -> /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build/lib/cr3_interface
+[6.703s] copying cr3_interface/joint_state_publisher_node.py -> /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build/lib/cr3_interface
+[6.703s] copying cr3_interface/hand_controller_node.py -> /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build/lib/cr3_interface
+[6.704s] copying cr3_interface/cr3_controller_node.py -> /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build/lib/cr3_interface
+[6.704s] running install
+[6.718s] running install_lib
+[6.815s] creating /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface
+[6.824s] copying /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build/lib/cr3_interface/__init__.py -> /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface
+[6.824s] copying /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build/lib/cr3_interface/tf_broadcaster_node.py -> /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface
+[6.825s] copying /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build/lib/cr3_interface/ip_to_ros_bridge_node.py -> /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface
+[6.825s] copying /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build/lib/cr3_interface/joint_state_publisher_node.py -> /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface
+[6.825s] copying /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build/lib/cr3_interface/hand_controller_node.py -> /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface
+[6.825s] copying /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build/lib/cr3_interface/cr3_controller_node.py -> /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface
+[6.825s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface/__init__.py to __init__.cpython-312.pyc
+[6.827s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface/tf_broadcaster_node.py to tf_broadcaster_node.cpython-312.pyc
+[6.828s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface/ip_to_ros_bridge_node.py to ip_to_ros_bridge_node.cpython-312.pyc
+[6.829s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface/joint_state_publisher_node.py to joint_state_publisher_node.cpython-312.pyc
+[6.830s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface/hand_controller_node.py to hand_controller_node.cpython-312.pyc
+[6.831s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface/cr3_controller_node.py to cr3_controller_node.cpython-312.pyc
+[6.836s] running install_data
+[6.836s] copying resource/cr3_interface -> /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/ament_index/resource_index/packages
+[6.843s] copying package.xml -> /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/cr3_interface
+[6.843s] running install_egg_info
+[6.949s] Copying ../../build/cr3_interface/cr3_interface.egg-info to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface-0.1.0-py3.12.egg-info
+[6.971s] running install_scripts
+[7.689s] Installing cr3_controller_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/bin
+[7.689s] Installing hand_controller_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/bin
+[7.690s] Installing joint_state_publisher_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/bin
+[7.690s] Installing tf_broadcaster_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/bin
+[7.690s] writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/cr3_interface/install.log'
+[7.921s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/cr3_interface' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/cr3_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cr3_interface build --build-base /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build install --record /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/install.log --single-version-externally-managed install_data --force

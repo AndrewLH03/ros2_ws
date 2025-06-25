@@ -1,0 +1,22 @@
+[5.124s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/integration_tests': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/integration_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/integration_tests/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/integration_tests build --build-base /home/andrewlh/VSCode/ros2_ws/build/integration_tests/build install --record /home/andrewlh/VSCode/ros2_ws/build/integration_tests/install.log --single-version-externally-managed install_data
+[5.811s] running egg_info
+[5.886s] writing ../../build/integration_tests/integration_tests.egg-info/PKG-INFO
+[5.886s] writing dependency_links to ../../build/integration_tests/integration_tests.egg-info/dependency_links.txt
+[5.890s] writing entry points to ../../build/integration_tests/integration_tests.egg-info/entry_points.txt
+[5.893s] writing requirements to ../../build/integration_tests/integration_tests.egg-info/requires.txt
+[5.894s] writing top-level names to ../../build/integration_tests/integration_tests.egg-info/top_level.txt
+[5.989s] reading manifest file '../../build/integration_tests/integration_tests.egg-info/SOURCES.txt'
+[5.997s] writing manifest file '../../build/integration_tests/integration_tests.egg-info/SOURCES.txt'
+[5.997s] running build
+[5.998s] running build_py
+[5.998s] running install
+[6.016s] running install_lib
+[6.071s] running install_data
+[6.071s] copying package.xml -> /home/andrewlh/VSCode/ros2_ws/install/integration_tests/share/integration_tests
+[6.072s] running install_egg_info
+[6.125s] removing '/home/andrewlh/VSCode/ros2_ws/install/integration_tests/lib/python3.12/site-packages/integration_tests-0.1.0-py3.12.egg-info' (and everything under it)
+[6.127s] Copying ../../build/integration_tests/integration_tests.egg-info to /home/andrewlh/VSCode/ros2_ws/install/integration_tests/lib/python3.12/site-packages/integration_tests-0.1.0-py3.12.egg-info
+[6.131s] running install_scripts
+[6.501s] Installing run_tests script to /home/andrewlh/VSCode/ros2_ws/install/integration_tests/bin
+[6.501s] writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/integration_tests/install.log'
+[6.616s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/integration_tests' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/integration_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/integration_tests/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/integration_tests build --build-base /home/andrewlh/VSCode/ros2_ws/build/integration_tests/build install --record /home/andrewlh/VSCode/ros2_ws/build/integration_tests/install.log --single-version-externally-managed install_data

@@ -1,0 +1,25 @@
+[5.398s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/build/cr3_interface': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/cr3_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build --no-deps symlink_data
+[7.095s] running develop
+[7.959s] running egg_info
+[8.026s] writing cr3_interface.egg-info/PKG-INFO
+[8.028s] writing dependency_links to cr3_interface.egg-info/dependency_links.txt
+[8.034s] writing entry points to cr3_interface.egg-info/entry_points.txt
+[8.034s] writing requirements to cr3_interface.egg-info/requires.txt
+[8.034s] writing top-level names to cr3_interface.egg-info/top_level.txt
+[8.201s] reading manifest file 'cr3_interface.egg-info/SOURCES.txt'
+[8.203s] writing manifest file 'cr3_interface.egg-info/SOURCES.txt'
+[8.286s] running build_ext
+[8.287s] Creating /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3-interface.egg-link (link to .)
+[8.288s] Installing cr3_controller_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/bin
+[8.290s] Installing hand_controller_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/bin
+[8.293s] Installing joint_state_publisher_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/bin
+[8.294s] Installing tf_broadcaster_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/bin
+[8.294s] 
+[8.294s] Installed /home/andrewlh/VSCode/ros2_ws/build/cr3_interface
+[8.294s] running symlink_data
+[8.294s] creating /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/ament_index
+[8.295s] creating /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/ament_index/resource_index
+[8.303s] creating /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/ament_index/resource_index/packages
+[8.305s] symbolically linking /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/resource/cr3_interface -> /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/ament_index/resource_index/packages
+[8.306s] symbolically linking /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/package.xml -> /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/cr3_interface
+[8.476s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/build/cr3_interface' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/cr3_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build --no-deps symlink_data

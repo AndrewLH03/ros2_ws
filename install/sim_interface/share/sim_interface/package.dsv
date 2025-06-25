@@ -1,0 +1,15 @@
+source;share/sim_interface/hook/path.ps1
+source;share/sim_interface/hook/path.dsv
+source;share/sim_interface/hook/path.sh
+source;share/sim_interface/hook/pythonpath.ps1
+source;share/sim_interface/hook/pythonpath.dsv
+source;share/sim_interface/hook/pythonpath.sh
+source;share/sim_interface/hook/pythonscriptspath.ps1
+source;share/sim_interface/hook/pythonscriptspath.dsv
+source;share/sim_interface/hook/pythonscriptspath.sh
+source;share/sim_interface/hook/ament_prefix_path.ps1
+source;share/sim_interface/hook/ament_prefix_path.dsv
+source;share/sim_interface/hook/ament_prefix_path.sh
+source;../../build/sim_interface/share/sim_interface/hook/pythonpath_develop.ps1
+source;../../build/sim_interface/share/sim_interface/hook/pythonpath_develop.dsv
+source;../../build/sim_interface/share/sim_interface/hook/pythonpath_develop.sh

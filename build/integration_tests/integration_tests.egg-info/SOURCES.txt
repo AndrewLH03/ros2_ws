@@ -1,12 +1,5 @@
 package.xml
 setup.py
-../../build/integration_tests/integration_tests.egg-info/PKG-INFO
-../../build/integration_tests/integration_tests.egg-info/SOURCES.txt
-../../build/integration_tests/integration_tests.egg-info/dependency_links.txt
-../../build/integration_tests/integration_tests.egg-info/entry_points.txt
-../../build/integration_tests/integration_tests.egg-info/requires.txt
-../../build/integration_tests/integration_tests.egg-info/top_level.txt
-../../build/integration_tests/integration_tests.egg-info/zip-safe
 integration_tests/__init__.py
 integration_tests/run_tests.py
 integration_tests.egg-info/PKG-INFO

@@ -1,9 +1,0 @@
-[3.056s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/build/ui': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/andrewlh/VSCode/ros2_ws/build/ui/build --no-deps symlink_data
-[3.851s] running develop
-[4.324s] running egg_info
-[4.371s] writing ui.egg-info/PKG-INFO
-[4.372s] writing dependency_links to ui.egg-info/dependency_links.txt
-[4.372s] writing entry points to ui.egg-info/entry_points.txt
-[4.372s] writing requirements to ui.egg-info/requires.txt
-[4.372s] writing top-level names to ui.egg-info/top_level.txt
-[4.435s] error: package directory 'ui' does not exist

@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating ui.egg-info
+writing ui.egg-info/PKG-INFO
+writing dependency_links to ui.egg-info/dependency_links.txt
+writing entry points to ui.egg-info/entry_points.txt
+writing requirements to ui.egg-info/requires.txt
+writing top-level names to ui.egg-info/top_level.txt
+writing manifest file 'ui.egg-info/SOURCES.txt'
+reading manifest file 'ui.egg-info/SOURCES.txt'
+writing manifest file 'ui.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui.egg-link (link to .)
+Installing mode_switcher_node script to /home/andrewlh/VSCode/ros2_ws/install/ui/bin
+Installing ui_dashboard_node script to /home/andrewlh/VSCode/ros2_ws/install/ui/bin
+
+Installed /home/andrewlh/VSCode/ros2_ws/build/ui
+running symlink_data
+creating /home/andrewlh/VSCode/ros2_ws/install/ui/share/ament_index
+creating /home/andrewlh/VSCode/ros2_ws/install/ui/share/ament_index/resource_index
+creating /home/andrewlh/VSCode/ros2_ws/install/ui/share/ament_index/resource_index/packages
+symbolically linking /home/andrewlh/VSCode/ros2_ws/build/ui/resource/ui -> /home/andrewlh/VSCode/ros2_ws/install/ui/share/ament_index/resource_index/packages
+symbolically linking /home/andrewlh/VSCode/ros2_ws/build/ui/package.xml -> /home/andrewlh/VSCode/ros2_ws/install/ui/share/ui

@@ -1,9 +1,0 @@
-[2.983s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/build/cr3_interface': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/cr3_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build --no-deps symlink_data
-[3.799s] running develop
-[4.287s] running egg_info
-[4.333s] writing cr3_interface.egg-info/PKG-INFO
-[4.334s] writing dependency_links to cr3_interface.egg-info/dependency_links.txt
-[4.335s] writing entry points to cr3_interface.egg-info/entry_points.txt
-[4.336s] writing requirements to cr3_interface.egg-info/requires.txt
-[4.337s] writing top-level names to cr3_interface.egg-info/top_level.txt
-[4.391s] error: package directory 'cr3_interface' does not exist

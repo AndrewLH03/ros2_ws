@@ -1,12 +1,5 @@
 package.xml
 setup.py
-../../build/diagnostics/diagnostics.egg-info/PKG-INFO
-../../build/diagnostics/diagnostics.egg-info/SOURCES.txt
-../../build/diagnostics/diagnostics.egg-info/dependency_links.txt
-../../build/diagnostics/diagnostics.egg-info/entry_points.txt
-../../build/diagnostics/diagnostics.egg-info/requires.txt
-../../build/diagnostics/diagnostics.egg-info/top_level.txt
-../../build/diagnostics/diagnostics.egg-info/zip-safe
 diagnostics/__init__.py
 diagnostics/emergency_stop_node.py
 diagnostics/error_handler_node.py

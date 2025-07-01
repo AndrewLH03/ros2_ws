@@ -27,31 +27,70 @@ class CameraNode(Node):
             Image,
             '/camera/image_raw',
             10)
-            
-        # Timer for simulating camera captures
-        self.timer = self.create_timer(0.1, self.capture_and_publish)
         
         # CV bridge for converting between OpenCV and ROS images
         self.cv_bridge = CvBridge()
         
-        self.get_logger().info('Camera node started')
+        # Try to initialize camera
+        self.cap = None
+        self.use_camera = self.init_camera()
+        
+        # Timer for capturing and publishing
+        self.timer = self.create_timer(0.033, self.capture_and_publish)  # ~30 FPS
+        
+        if self.use_camera:
+            self.get_logger().info('Camera node started with real camera')
+        else:
+            self.get_logger().error('Camera node started but NO CAMERA DETECTED - no images will be published')
+
+    def init_camera(self):
+        """Initialize camera capture."""
+        try:
+            # Try to open camera device 0
+            self.cap = cv2.VideoCapture(0)
+            if not self.cap.isOpened():
+                self.get_logger().warn('Cannot open camera device 0, trying device 1')
+                self.cap = cv2.VideoCapture(1)
+                
+            if not self.cap.isOpened():
+                self.get_logger().warn('No camera devices found, using dummy images')
+                return False
+                
+            # Set camera properties
+            self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+            self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+            self.cap.set(cv2.CAP_PROP_FPS, 30)
+            
+            # Test capture
+            ret, frame = self.cap.read()
+            if not ret:
+                self.get_logger().warn('Camera opened but cannot capture frames, using dummy images')
+                self.cap.release()
+                return False
+                
+            self.get_logger().info(f'Camera initialized: {frame.shape}')
+            return True
+            
+        except Exception as e:
+            self.get_logger().error(f'Error initializing camera: {e}')
+            return False
 
     def capture_image(self):
-        """Capture image from camera hardware (simulated)."""
-        # Create a simple dummy image (grayscale gradient)
-        height, width = 480, 640
-        dummy_image = np.zeros((height, width, 3), dtype=np.uint8)
-        
-        # Create a gradient pattern
-        for y in range(height):
-            for x in range(width):
-                dummy_image[y, x] = [
-                    int(x * 255 / width),
-                    int(y * 255 / height),
-                    128
-                ]
-        
-        return dummy_image
+        """Capture image from camera hardware."""
+        if self.use_camera and self.cap is not None:
+            try:
+                ret, frame = self.cap.read()
+                if ret:
+                    return frame
+                else:
+                    self.get_logger().error('Failed to capture frame from camera')
+                    return None
+            except Exception as e:
+                self.get_logger().error(f'Error capturing from camera: {e}')
+                return None
+        else:
+            self.get_logger().error('No camera available')
+            return None
 
     def publish_image(self, image):
         """Publish captured image data."""
@@ -66,15 +105,27 @@ class CameraNode(Node):
     def capture_and_publish(self):
         """Capture an image and publish it."""
         image = self.capture_image()
-        self.publish_image(image)
+        if image is not None:
+            self.publish_image(image)
+
+    def cleanup(self):
+        """Clean up camera resources."""
+        if self.cap is not None:
+            self.cap.release()
+            self.get_logger().info('Camera resources released')
 
 def main(args=None):
     rclpy.init(args=args)
     node = CameraNode()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.cleanup()
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
-

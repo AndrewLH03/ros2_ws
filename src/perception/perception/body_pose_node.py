@@ -2,24 +2,42 @@
 """
 Body Pose Node for CR3 Control System
 
-Detects and publishes human body pose information for downstream processing.
+Enhanced with MediaPipe pose detection. Detects and publishes human body pose information.
 """
 
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from geometry_msgs.msg import PoseArray, Pose
+import cv2
+import numpy as np
+from cv_bridge import CvBridge
+import mediapipe as mp
 
 class BodyPoseNode(Node):
     """
-    Detects and publishes human body pose.
+    Enhanced body pose detection using MediaPipe.
     - Subscribes to camera/image topics
-    - Runs pose estimation algorithms
-    - Publishes body pose data
+    - Runs MediaPipe pose estimation
+    - Publishes body pose data with shoulder extraction
     """
     def __init__(self):
-        """Initialize the body pose node."""
+        """Initialize the enhanced body pose node."""
         super().__init__('body_pose_node')
+        
+        # OpenCV and MediaPipe setup
+        self.cv_bridge = CvBridge()
+        self.mp_pose = mp.solutions.pose
+        self.mp_drawing = mp.solutions.drawing_utils
+        
+        # Initialize MediaPipe pose model
+        self.pose = self.mp_pose.Pose(
+            static_image_mode=False,
+            model_complexity=1,
+            smooth_landmarks=True,
+            min_detection_confidence=0.5,
+            min_tracking_confidence=0.5
+        )
         
         # Subscribers
         self.image_sub = self.create_subscription(
@@ -31,41 +49,91 @@ class BodyPoseNode(Node):
         # Publishers
         self.pose_pub = self.create_publisher(
             PoseArray,
-            '/body_pose_raw',
+            '/perception/body_pose',
             10)
+        
+        self.get_logger().info('Enhanced body pose node started with MediaPipe')
+
+    def process_image(self, image_msg):
+        """Process incoming image and extract body pose using MediaPipe."""
+        try:
+            # Convert ROS Image to OpenCV format
+            cv_image = self.cv_bridge.imgmsg_to_cv2(image_msg, "bgr8")
             
-        # Heartbeat timer - publishes dummy data to make topics visible
-        self.timer = self.create_timer(1.0, self.publish_heartbeat)
-        
-        self.get_logger().info('Body pose node started')
+            # Convert BGR to RGB for MediaPipe
+            rgb_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
+            
+            # Process with MediaPipe
+            results = self.pose.process(rgb_image)
+            
+            # Extract body poses and publish
+            self.extract_and_publish_body_poses(results)
+            
+        except Exception as e:
+            self.get_logger().error(f'Error processing image: {e}')
 
-    def process_image(self, image):
-        """Process incoming image and estimate body pose."""
-        # Minimal implementation - just log receipt
-        self.get_logger().debug('Received image')
+    def extract_and_publish_body_poses(self, results):
+        """Extract body landmarks and publish as poses."""
+        pose_array = PoseArray()
+        pose_array.header.stamp = self.get_clock().now().to_msg()
+        pose_array.header.frame_id = "camera_frame"
         
-        # In a real implementation, this would process the image
-        # and extract body pose information
-
-    def publish_body_pose(self, pose):
-        """Publish estimated body pose."""
-        self.pose_pub.publish(pose)
+        if results.pose_landmarks:
+            # Extract all pose landmarks in order
+            landmarks = [
+                self.mp_pose.PoseLandmark.NOSE,
+                self.mp_pose.PoseLandmark.LEFT_EYE_INNER,
+                self.mp_pose.PoseLandmark.LEFT_EYE,
+                self.mp_pose.PoseLandmark.LEFT_EYE_OUTER,
+                self.mp_pose.PoseLandmark.RIGHT_EYE_INNER,
+                self.mp_pose.PoseLandmark.RIGHT_EYE,
+                self.mp_pose.PoseLandmark.RIGHT_EYE_OUTER,
+                self.mp_pose.PoseLandmark.LEFT_EAR,
+                self.mp_pose.PoseLandmark.RIGHT_EAR,
+                self.mp_pose.PoseLandmark.MOUTH_LEFT,
+                self.mp_pose.PoseLandmark.MOUTH_RIGHT,
+                self.mp_pose.PoseLandmark.LEFT_SHOULDER,   # Index 11
+                self.mp_pose.PoseLandmark.RIGHT_SHOULDER,  # Index 12
+                self.mp_pose.PoseLandmark.LEFT_ELBOW,
+                self.mp_pose.PoseLandmark.RIGHT_ELBOW,
+                self.mp_pose.PoseLandmark.LEFT_WRIST,
+                self.mp_pose.PoseLandmark.RIGHT_WRIST,     # Index 16
+                self.mp_pose.PoseLandmark.LEFT_PINKY,
+                self.mp_pose.PoseLandmark.RIGHT_PINKY,
+                self.mp_pose.PoseLandmark.LEFT_INDEX,
+                self.mp_pose.PoseLandmark.RIGHT_INDEX,
+                self.mp_pose.PoseLandmark.LEFT_THUMB,
+                self.mp_pose.PoseLandmark.RIGHT_THUMB,
+                self.mp_pose.PoseLandmark.LEFT_HIP,
+                self.mp_pose.PoseLandmark.RIGHT_HIP,
+                self.mp_pose.PoseLandmark.LEFT_KNEE,
+                self.mp_pose.PoseLandmark.RIGHT_KNEE,
+                self.mp_pose.PoseLandmark.LEFT_ANKLE,
+                self.mp_pose.PoseLandmark.RIGHT_ANKLE,
+                self.mp_pose.PoseLandmark.LEFT_HEEL,
+                self.mp_pose.PoseLandmark.RIGHT_HEEL,
+                self.mp_pose.PoseLandmark.LEFT_FOOT_INDEX,
+                self.mp_pose.PoseLandmark.RIGHT_FOOT_INDEX
+            ]
+            
+            # Convert each landmark to a Pose message
+            for landmark_idx in landmarks:
+                landmark = results.pose_landmarks.landmark[landmark_idx]
+                
+                body_pose = Pose()
+                body_pose.position.x = landmark.x
+                body_pose.position.y = landmark.y
+                body_pose.position.z = landmark.z
+                body_pose.orientation.w = 1.0  # Default orientation
+                
+                pose_array.poses.append(body_pose)
+            
+            self.get_logger().debug(f'Body pose detected with {len(pose_array.poses)} landmarks')
+        else:
+            self.get_logger().debug('No body pose detected')
         
-    def publish_heartbeat(self):
-        """Publish dummy pose data to make topic visible in rqt_graph"""
-        msg = PoseArray()
-        msg.header.stamp = self.get_clock().now().to_msg()
-        msg.header.frame_id = "camera_frame"
-        
-        # Add a single pose 
-        dummy_pose = Pose()
-        dummy_pose.position.x = 0.5
-        dummy_pose.position.y = 0.5
-        dummy_pose.position.z = 1.0
-        dummy_pose.orientation.w = 1.0
-        msg.poses.append(dummy_pose)
-        
-        self.publish_body_pose(msg)
+        # Publish pose array (even if empty)
+        self.pose_pub.publish(pose_array)
 
 def main(args=None):
     rclpy.init(args=args)

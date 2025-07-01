@@ -25,10 +25,17 @@ class ModeSwitcherNode(Node):
         super().__init__('mode_switcher_node')
         
         # Define available modes
-        self.modes = ["manual", "pose_tracking", "autonomous"]
+        self.modes = ["manual", "pose_tracking", "vector_control", "autonomous"]
         self.current_mode_index = 1  # Default to pose_tracking
         self.last_mode_change_time = time.time()
         self.debounce_time = 1.0  # 1 second debounce
+        
+        # UI state management
+        self.ui_commands_sub = self.create_subscription(
+            String,
+            '/ui/control_commands',
+            self.handle_ui_commands,
+            10)
         
         # Publisher for mode
         self.mode_pub = self.create_publisher(
@@ -50,6 +57,22 @@ class ModeSwitcherNode(Node):
         
         self.get_logger().info('Mode switcher node started')
         
+    def handle_ui_commands(self, msg):
+        """Handle commands from the UI dashboard."""
+        command = msg.data
+        if command.startswith('set_mode:'):
+            mode = command.split(':')[1]
+            if mode in self.modes:
+                self.handle_user_input(mode)
+        elif command == 'cycle_mode':
+            self.cycle_mode_internal()
+        
+    def cycle_mode_internal(self):
+        """Internal method to cycle through modes."""
+        self.current_mode_index = (self.current_mode_index + 1) % len(self.modes)
+        new_mode = self.modes[self.current_mode_index]
+        self.handle_user_input(new_mode)
+
     def check_and_publish_mode(self):
         """Check current parameter value and publish mode."""
         param_value = self.get_parameter('control_mode').value

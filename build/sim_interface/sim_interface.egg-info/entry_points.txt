@@ -1,3 +1,0 @@
-[console_scripts]
-sim_world_interface_node = sim_interface.sim_world_interface_node:main
-simulator_node = sim_interface.simulator_node:main

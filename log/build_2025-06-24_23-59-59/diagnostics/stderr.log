@@ -1,2 +1,0 @@
-/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for perception [unknown version] (/home/andrewlh/VSCode/ros2_ws/build/perception)
-  self.local_index = Environment(self.shadow_path + sys.path)

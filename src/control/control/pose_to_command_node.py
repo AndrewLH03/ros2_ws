@@ -7,7 +7,7 @@ Converts human pose data into actionable robot commands. Subscribes to /hand_pos
 
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Pose, PoseArray
+from geometry_msgs.msg import Pose, PoseArray, Vector3
 from std_msgs.msg import String
 
 class PoseToCommandNode(Node):
@@ -24,8 +24,14 @@ class PoseToCommandNode(Node):
         # Subscribers
         self.hand_pose_sub = self.create_subscription(
             PoseArray,
-            '/hand_pose_raw',
+            '/perception/hand_pose_robot_frame',
             self.process_hand_pose,
+            10)
+            
+        self.tracking_vector_sub = self.create_subscription(
+            Vector3,
+            '/perception/tracking_vector',
+            self.process_tracking_vector,
             10)
             
         self.mode_sub = self.create_subscription(
@@ -43,10 +49,21 @@ class PoseToCommandNode(Node):
         # Current mode
         self.current_mode = "pose_tracking"  # Default mode
         
+        # Store latest tracking vector for control decisions
+        self.latest_tracking_vector = None
+        
         # Timer for publishing heartbeat (in case no poses received)
         self.timer = self.create_timer(1.0, self.publish_heartbeat)
         
         self.get_logger().info('Pose to command node started')
+
+    def process_tracking_vector(self, vector_msg):
+        """Process tracking vector for enhanced control."""
+        self.latest_tracking_vector = vector_msg
+        
+        # Use vector magnitude for scaling factor
+        magnitude = (vector_msg.x**2 + vector_msg.y**2 + vector_msg.z**2)**0.5
+        self.get_logger().debug(f'Tracking vector magnitude: {magnitude:.3f}')
 
     def process_hand_pose(self, hand_pose_array):
         """Process incoming hand pose and generate robot command."""
@@ -56,14 +73,41 @@ class PoseToCommandNode(Node):
         # Extract the first pose from the array
         hand_pose = hand_pose_array.poses[0]
         
-        # Apply a simple transformation based on mode
+        # Apply transformation based on mode and tracking vector
         target_pose = Pose()
+        
         if self.current_mode == "pose_tracking":
-            # Direct mapping with scaling
-            target_pose.position.x = hand_pose.position.x * 0.5
-            target_pose.position.y = hand_pose.position.y * 0.5
-            target_pose.position.z = hand_pose.position.z * 0.5
+            # Enhanced control using tracking vector
+            if self.latest_tracking_vector is not None:
+                # Use tracking vector for directional control
+                vector_magnitude = (self.latest_tracking_vector.x**2 + 
+                                  self.latest_tracking_vector.y**2 + 
+                                  self.latest_tracking_vector.z**2)**0.5
+                
+                # Scale based on vector magnitude (larger movements = more robot movement)
+                scale_factor = min(1.0, vector_magnitude * 2.0)  # Cap at 1.0
+                
+                target_pose.position.x = hand_pose.position.x * scale_factor
+                target_pose.position.y = hand_pose.position.y * scale_factor
+                target_pose.position.z = hand_pose.position.z * scale_factor
+            else:
+                # Fallback to direct mapping with scaling
+                target_pose.position.x = hand_pose.position.x * 0.5
+                target_pose.position.y = hand_pose.position.y * 0.5
+                target_pose.position.z = hand_pose.position.z * 0.5
+                
             target_pose.orientation = hand_pose.orientation
+            
+        elif self.current_mode == "vector_control":
+            # Use tracking vector directly for control
+            if self.latest_tracking_vector is not None:
+                target_pose.position.x = self.latest_tracking_vector.x
+                target_pose.position.y = self.latest_tracking_vector.y
+                target_pose.position.z = self.latest_tracking_vector.z + 0.3  # Offset for safety
+                target_pose.orientation.w = 1.0  # Default orientation
+            else:
+                return  # No vector available
+                
         else:
             # Default behavior for other modes
             target_pose = hand_pose

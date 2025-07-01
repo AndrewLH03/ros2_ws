@@ -1,0 +1,5 @@
+[console_scripts]
+motion_planner_node = control.motion_planner_node:main
+pose_to_command_node = control.pose_to_command_node:main
+teleop_node = control.teleop_node:main
+trajectory_executor_node = control.trajectory_executor_node:main

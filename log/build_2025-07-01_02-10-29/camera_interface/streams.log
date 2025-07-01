@@ -1,0 +1,22 @@
+[4.629s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/camera_interface': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/camera_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_interface build --build-base /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build install --record /home/andrewlh/VSCode/ros2_ws/build/camera_interface/install.log --single-version-externally-managed install_data
+[5.359s] running egg_info
+[5.404s] writing ../../build/camera_interface/camera_interface.egg-info/PKG-INFO
+[5.404s] writing dependency_links to ../../build/camera_interface/camera_interface.egg-info/dependency_links.txt
+[5.404s] writing entry points to ../../build/camera_interface/camera_interface.egg-info/entry_points.txt
+[5.405s] writing requirements to ../../build/camera_interface/camera_interface.egg-info/requires.txt
+[5.405s] writing top-level names to ../../build/camera_interface/camera_interface.egg-info/top_level.txt
+[5.515s] reading manifest file '../../build/camera_interface/camera_interface.egg-info/SOURCES.txt'
+[5.528s] writing manifest file '../../build/camera_interface/camera_interface.egg-info/SOURCES.txt'
+[5.531s] running build
+[5.531s] running build_py
+[5.531s] running install
+[5.536s] running install_lib
+[5.629s] running install_data
+[5.629s] running install_egg_info
+[5.691s] removing '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages/camera_interface-0.1.0-py3.12.egg-info' (and everything under it)
+[5.691s] Copying ../../build/camera_interface/camera_interface.egg-info to /home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages/camera_interface-0.1.0-py3.12.egg-info
+[5.692s] running install_scripts
+[6.052s] Installing camera_info_node script to /home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/camera_interface
+[6.054s] Installing camera_node script to /home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/camera_interface
+[6.054s] writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/camera_interface/install.log'
+[6.133s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/camera_interface' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/camera_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_interface build --build-base /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build install --record /home/andrewlh/VSCode/ros2_ws/build/camera_interface/install.log --single-version-externally-managed install_data

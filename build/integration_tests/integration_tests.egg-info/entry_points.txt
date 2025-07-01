@@ -1,0 +1,2 @@
+[console_scripts]
+run_tests = integration_tests.run_tests:main

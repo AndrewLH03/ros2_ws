@@ -1,0 +1,28 @@
+[4.055s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/ui': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ui build --build-base /home/andrewlh/VSCode/ros2_ws/build/ui/build install --record /home/andrewlh/VSCode/ros2_ws/build/ui/install.log --single-version-externally-managed install_data
+[5.399s] running egg_info
+[5.400s] writing ../../build/ui/ui.egg-info/PKG-INFO
+[5.400s] writing dependency_links to ../../build/ui/ui.egg-info/dependency_links.txt
+[5.400s] writing entry points to ../../build/ui/ui.egg-info/entry_points.txt
+[5.400s] writing requirements to ../../build/ui/ui.egg-info/requires.txt
+[5.400s] writing top-level names to ../../build/ui/ui.egg-info/top_level.txt
+[5.400s] reading manifest file '../../build/ui/ui.egg-info/SOURCES.txt'
+[5.400s] writing manifest file '../../build/ui/ui.egg-info/SOURCES.txt'
+[5.401s] running build
+[5.401s] running build_py
+[5.401s] copying ui/mode_switcher_node_simplified.py -> /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui
+[5.401s] copying ui/ui_dashboard_node.py -> /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui
+[5.401s] running install
+[5.401s] running install_lib
+[5.402s] copying /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui/mode_switcher_node_simplified.py -> /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui
+[5.402s] copying /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui/ui_dashboard_node.py -> /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui
+[5.402s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/mode_switcher_node_simplified.py to mode_switcher_node_simplified.cpython-312.pyc
+[5.402s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/ui_dashboard_node.py to ui_dashboard_node.cpython-312.pyc
+[5.402s] running install_data
+[5.405s] running install_egg_info
+[5.406s] removing '/home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui-0.1.0-py3.12.egg-info' (and everything under it)
+[5.406s] Copying ../../build/ui/ui.egg-info to /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui-0.1.0-py3.12.egg-info
+[5.406s] running install_scripts
+[5.517s] Installing mode_switcher_node script to /home/andrewlh/VSCode/ros2_ws/install/ui/lib/ui
+[5.520s] Installing ui_dashboard_node script to /home/andrewlh/VSCode/ros2_ws/install/ui/lib/ui
+[5.521s] writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/ui/install.log'
+[5.585s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/ui' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ui build --build-base /home/andrewlh/VSCode/ros2_ws/build/ui/build install --record /home/andrewlh/VSCode/ros2_ws/build/ui/install.log --single-version-externally-managed install_data

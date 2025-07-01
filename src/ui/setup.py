@@ -23,7 +23,7 @@ setup(
     entry_points={
         'console_scripts': [
             'mode_switcher_node = ui.mode_switcher_node:main',
-            'ui_dashboard_node = ui.ui_dashboard_node:main',
+            'ui_dashboard_node = ui.ui_dashboard_node_modular:main',
         ],
     },
 )

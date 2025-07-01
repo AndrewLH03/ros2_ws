@@ -56,10 +56,14 @@ class CameraNode(Node):
                 self.get_logger().warn('No camera devices found, using dummy images')
                 return False
                 
-            # Set camera properties
+            # Set camera properties for better performance
             self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
             self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
             self.cap.set(cv2.CAP_PROP_FPS, 30)
+            self.cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)  # Reduce buffer to minimize latency
+            
+            # Additional performance settings
+            self.cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'))  # Use MJPEG for better performance
             
             # Test capture
             ret, frame = self.cap.read()

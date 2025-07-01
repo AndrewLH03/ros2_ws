@@ -1,5 +1,0 @@
-[console_scripts]
-cr3_controller_node = cr3_interface.cr3_controller_node:main
-hand_controller_node = cr3_interface.hand_controller_node:main
-joint_state_publisher_node = cr3_interface.joint_state_publisher_node:main
-tf_broadcaster_node = cr3_interface.tf_broadcaster_node:main

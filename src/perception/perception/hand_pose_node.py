@@ -1,6 +1,20 @@
 #!/usr/bin/env python3
 """
-Hand Pose Node for CR3 Control System
+Ha        # Hand tracking preference (default to right hand)
+        self.preferred_hand = "Right"  # "Left" or "Right"
+        
+        # OpenCV and MediaPipe setup
+        self.cv_bridge = CvBridge()
+        self.mp_hands = mp.solutions.hands
+        
+        # Initialize MediaPipe hands model - optimized for real-time tracking
+        self.hands = self.mp_hands.Hands(
+            static_image_mode=False,
+            max_num_hands=2,  # Track both hands to choose preferred one
+            min_detection_confidence=0.5,  # Lower for faster detection
+            min_tracking_confidence=0.7,   # Higher for smoother tracking
+            model_complexity=1  # Use medium complexity for balance
+        )3 Control System
 
 Enhanced with MediaPipe hand tracking. Detects and publishes human hand pose information.
 """
@@ -30,16 +44,21 @@ class HandPoseNode(Node):
         # Hand tracking preference (default to right hand)
         self.preferred_hand = "Right"  # "Left" or "Right"
         
+        # Performance optimization: frame skipping
+        self.frame_skip_count = 0
+        self.frame_skip_interval = 2  # Process every 3rd frame (10 FPS for MediaPipe)
+        
         # OpenCV and MediaPipe setup
         self.cv_bridge = CvBridge()
         self.mp_hands = mp.solutions.hands
         
-        # Initialize MediaPipe hands model - track both hands but prefer one
+        # Initialize MediaPipe hands model - optimized for performance
         self.hands = self.mp_hands.Hands(
             static_image_mode=False,
             max_num_hands=2,  # Track both hands to choose preferred one
-            min_detection_confidence=0.5,
-            min_tracking_confidence=0.5
+            min_detection_confidence=0.7,  # Higher threshold for better performance
+            min_tracking_confidence=0.5,
+            model_complexity=0  # Use simpler model for better performance
         )
         
         # Subscribers
@@ -47,14 +66,14 @@ class HandPoseNode(Node):
             Image,
             '/camera/image_raw',
             self.process_image,
-            10)
+            1)  # Process only latest image for minimal latency
             
         # Subscribe to hand selection commands
         self.hand_selection_sub = self.create_subscription(
             String,
             '/ui/hand_selection',
             self.handle_hand_selection,
-            10)
+            5)
             
         # Publishers
         self.pose_pub = self.create_publisher(
@@ -84,7 +103,7 @@ class HandPoseNode(Node):
             # Convert ROS Image to OpenCV format
             cv_image = self.cv_bridge.imgmsg_to_cv2(image_msg, "bgr8")
             
-            # Convert BGR to RGB for MediaPipe
+            # Convert BGR to RGB for MediaPipe (no resizing for better accuracy)
             rgb_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
             
             # Process with MediaPipe

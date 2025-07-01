@@ -57,24 +57,24 @@ class UIDashboardNode(Node):
         # Set mouse callback
         self.window_manager.set_mouse_callback(self.mouse_callback)
         
-        # Main update timer
-        self.timer = self.create_timer(0.033, self.update_display)  # ~30 FPS
+        # Main update timer - matching camera FPS for real-time feel
+        self.timer = self.create_timer(0.033, self.update_display)  # 30 FPS for UI updates
         
         self.get_logger().info('Modular UI dashboard started in fullscreen mode')
     
     def _setup_subscribers(self):
         """Set up ROS2 subscribers."""
         self.camera_sub = self.create_subscription(
-            Image, '/camera/image_raw', self.camera_callback, 10)
+            Image, '/camera/image_raw', self.camera_callback, 1)  # Small queue for latest image
         
         self.hand_confidence_sub = self.create_subscription(
-            Float32, '/perception/hand_confidence', self.hand_confidence_callback, 10)
+            Float32, '/perception/hand_confidence', self.hand_confidence_callback, 1)
         
         self.hand_pose_sub = self.create_subscription(
-            PoseArray, '/perception/hand_pose', self.hand_pose_callback, 10)
+            PoseArray, '/perception/hand_pose', self.hand_pose_callback, 1)  # Latest pose only
         
         self.body_pose_sub = self.create_subscription(
-            PoseArray, '/perception/body_pose', self.body_pose_callback, 10)
+            PoseArray, '/perception/body_pose', self.body_pose_callback, 1)  # Latest pose only
         
         self.mode_sub = self.create_subscription(
             String, '/mode', self.mode_callback, 10)

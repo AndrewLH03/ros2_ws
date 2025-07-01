@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
 """
-Body Pose Node for CR3 Control System
+        # OpenCV and MediaPipe setup
+        self.cv_bridge = CvBridge()
+        self.mp_pose = mp.solutions.pose
+        
+        # Initialize MediaPipe pose model - optimized for real-time tracking
+        self.pose = self.mp_pose.Pose(
+            static_image_mode=False,
+            model_complexity=1,  # Use medium complexity for balance
+            smooth_landmarks=True,
+            min_detection_confidence=0.5,  # Lower for faster detection
+            min_tracking_confidence=0.7    # Higher for smoother tracking
+        )or CR3 Control System
 
 Enhanced with MediaPipe pose detection. Detects and publishes human body pose information.
 """
@@ -25,16 +36,20 @@ class BodyPoseNode(Node):
         """Initialize the enhanced body pose node."""
         super().__init__('body_pose_node')
         
+        # Performance optimization: frame skipping
+        self.frame_skip_count = 0
+        self.frame_skip_interval = 3  # Process every 4th frame (7.5 FPS for body pose)
+        
         # OpenCV and MediaPipe setup
         self.cv_bridge = CvBridge()
         self.mp_pose = mp.solutions.pose
         
-        # Initialize MediaPipe pose model - simplified config
+        # Initialize MediaPipe pose model - optimized for performance
         self.pose = self.mp_pose.Pose(
             static_image_mode=False,
-            model_complexity=1,
+            model_complexity=0,  # Use simpler model for better performance
             smooth_landmarks=True,
-            min_detection_confidence=0.5,
+            min_detection_confidence=0.7,  # Higher threshold for better performance
             min_tracking_confidence=0.5
         )
         
@@ -43,7 +58,7 @@ class BodyPoseNode(Node):
             Image,
             '/camera/image_raw',
             self.process_image,
-            10)
+            1)  # Process only latest image for minimal latency
             
         # Publishers
         self.pose_pub = self.create_publisher(
@@ -59,7 +74,7 @@ class BodyPoseNode(Node):
             # Convert ROS Image to OpenCV format
             cv_image = self.cv_bridge.imgmsg_to_cv2(image_msg, "bgr8")
             
-            # Convert BGR to RGB for MediaPipe
+            # Convert BGR to RGB for MediaPipe (no resizing for better accuracy)
             rgb_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
             
             # Process with MediaPipe

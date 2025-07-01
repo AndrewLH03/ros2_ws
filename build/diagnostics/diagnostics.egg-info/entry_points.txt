@@ -1,9 +1,0 @@
-[console_scripts]
-emergency_stop_node = diagnostics.emergency_stop_node:main
-error_handler_node = diagnostics.error_handler_node:main
-health_monitor_node = diagnostics.health_monitor_node:main
-logger_node = diagnostics.logger_node:main
-network_monitor_node = diagnostics.network_monitor_node:main
-resource_monitor_node = diagnostics.resource_monitor_node:main
-system_metrics_node = diagnostics.system_metrics_node:main
-watchdog_node = diagnostics.watchdog_node:main

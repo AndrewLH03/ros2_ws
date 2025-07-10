@@ -22,7 +22,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'finger_servo_controller_node = servo_control.finger_servo_controller_node:main',
             'servo_interface_node = servo_control.servo_interface_node:main',
             'manual_servo_control_node = servo_control.manual_servo_control_node:main',
             'direct_servo_tester_node = servo_control.direct_servo_tester_node:main',

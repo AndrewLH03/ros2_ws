@@ -112,6 +112,10 @@ test_servo_system() {
     ros2 run ui mode_switcher_node &
     MODE_SWITCHER_PID=$!
     
+    echo "Starting lifecycle action server..."
+    ros2 run action_server lifecycle_action_server &
+    LIFECYCLE_ACTION_PID=$!
+    
     sleep 3
     
     echo ""
@@ -197,6 +201,10 @@ run_full_system() {
     ros2 run ui mode_switcher_node &
     MODE_SWITCHER_PID=$!
 
+    echo "⚙️ Starting lifecycle action server..."
+    ros2 run action_server lifecycle_action_server &
+    LIFECYCLE_ACTION_PID=$!
+
     # Set initial mode
     sleep 2
     if [[ "$START_MANUAL" == true ]]; then
@@ -281,7 +289,7 @@ cleanup() {
     echo ""
     echo "🛑 Stopping all nodes..."
     # Kill all the PIDs we've stored
-    for pid in $CAMERA_PID $HAND_POSE_PID $BODY_POSE_PID $COORD_TRANSFORM_PID $POSE_COMMAND_PID $SERVO_CONTROLLER_PID $SERVO_INTERFACE_PID $MANUAL_SERVO_PID $MODE_SWITCHER_PID; do
+    for pid in $CAMERA_PID $HAND_POSE_PID $BODY_POSE_PID $COORD_TRANSFORM_PID $POSE_COMMAND_PID $SERVO_CONTROLLER_PID $SERVO_INTERFACE_PID $MANUAL_SERVO_PID $MODE_SWITCHER_PID $LIFECYCLE_ACTION_PID; do
         if [[ -n "$pid" ]]; then
             kill $pid 2>/dev/null || true
         fi

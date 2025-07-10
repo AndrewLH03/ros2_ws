@@ -15,8 +15,10 @@
   <depend>sensor_msgs</depend>
   <depend>geometry_msgs</depend>
   
-  <!-- Dependencies for servo control functionality -->
+  <!-- Dependencies for OpenCV dashboard functionality -->
+  <exec_depend>python3-opencv</exec_depend>
   <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>cv-bridge</exec_depend>
 
   <export>
     <build_type>ament_python</build_type>

@@ -1,4 +1,5 @@
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/__init__.py
+/home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/ui_dashboard_lifecycle_node.py
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/mode_switcher_node.py
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/ui_visualization.py
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/ui_window_manager.py
@@ -6,6 +7,7 @@
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/ui_dashboard_node_modular.py
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/lifecycle_manager.py
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/__pycache__/__init__.cpython-312.pyc
+/home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/__pycache__/ui_dashboard_lifecycle_node.cpython-312.pyc
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/__pycache__/mode_switcher_node.cpython-312.pyc
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/__pycache__/ui_visualization.cpython-312.pyc
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/__pycache__/ui_window_manager.cpython-312.pyc
@@ -21,7 +23,7 @@
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui-0.1.0-py3.12.egg-info/SOURCES.txt
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui-0.1.0-py3.12.egg-info/dependency_links.txt
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui-0.1.0-py3.12.egg-info/requires.txt
-/home/andrewlh/VSCode/ros2_ws/install/ui/lib/ui/lifecycle_manager
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/ui/mode_switcher_node
+/home/andrewlh/VSCode/ros2_ws/install/ui/lib/ui/ui_dashboard_lifecycle_node
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/ui/ui_dashboard_node
 /home/andrewlh/VSCode/ros2_ws/install/ui/lib/ui/ui_dashboard_node_modular

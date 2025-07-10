@@ -22,10 +22,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'mode_switcher_node = ui.mode_switcher_node:main',
             'ui_dashboard_node = ui.ui_dashboard_node_modular:main',
             'ui_dashboard_node_modular = ui.ui_dashboard_node_modular:main',
-            'lifecycle_manager = ui.lifecycle_manager:main',
+            'ui_dashboard_lifecycle_node = ui.ui_dashboard_lifecycle_node:main',
+            'mode_switcher_node = ui.mode_switcher_node:main',
         ],
     },
 )

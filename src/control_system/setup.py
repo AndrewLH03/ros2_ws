@@ -24,10 +24,12 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'unified_control_node = control_system.unified_control_node:main',
+            #Lifecycle nodes
+            'servo_interface_node = control_system.servo_interface_node:main',
             'manual_control_node = control_system.manual_control_node:main',
             'perception_control_node = control_system.perception_control_node:main',
-            'servo_interface_node = control_system.servo_interface_node:main',
+            
+            'unified_control_node = control_system.unified_control_node:main',
             'servo_interface_lifecycle_node = control_system.servo_interface_lifecycle_node:main',
             'mode_manager_node = control_system.mode_manager_node:main',
         ],

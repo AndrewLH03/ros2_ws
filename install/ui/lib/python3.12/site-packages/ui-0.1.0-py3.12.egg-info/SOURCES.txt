@@ -13,6 +13,7 @@ ui/__init__.py
 ui/lifecycle_manager.py
 ui/mode_switcher_node.py
 ui/ui_button_controller.py
+ui/ui_dashboard_lifecycle_node.py
 ui/ui_dashboard_node_modular.py
 ui/ui_visualization.py
 ui/ui_window_manager.py

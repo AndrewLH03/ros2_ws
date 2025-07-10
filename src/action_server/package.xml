@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>action_server</name>
+  <version>0.1.0</version>
+  <description>Action servers for CR3 robot control system</description>
+  <maintainer email="andrew@example.com">andrewlh</maintainer>
+  <license>MIT</license>
+
+  <!-- Python dependencies -->
+  <depend>rclpy</depend>
+  <depend>rclpy_action</depend>
+  <depend>lifecycle_msgs</depend>
+  <depend>action_interfaces</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

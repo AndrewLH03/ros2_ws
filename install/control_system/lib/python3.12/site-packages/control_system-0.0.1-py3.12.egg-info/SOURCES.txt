@@ -9,7 +9,6 @@ setup.py
 ../../build/control_system/control_system.egg-info/top_level.txt
 ../../build/control_system/control_system.egg-info/zip-safe
 control_system/__init__.py
-control_system/lifecycle_manager.py
 control_system/manual_control_node.py
 control_system/mode_manager_node.py
 control_system/perception_control_node.py

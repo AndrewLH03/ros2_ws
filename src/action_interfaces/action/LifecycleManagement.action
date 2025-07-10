@@ -1,0 +1,21 @@
+# Goal: Request to transition one or more nodes
+string[] node_names                    # List of nodes to transition
+uint8 transition                       # Transition ID (configure=1, activate=2, deactivate=3, cleanup=4, shutdown=5)
+float64 timeout                        # Maximum time to wait for completion (0.0 = use default)
+bool wait_for_completion               # Whether to wait for all nodes to complete
+---
+# Result: Final outcome of all transitions
+bool success                           # Overall success (true if all nodes succeeded)
+string message                         # Summary message
+string[] node_names                    # Echo of requested nodes
+bool[] node_success                    # Per-node success status
+string[] node_messages                 # Per-node result messages
+float64[] node_durations               # Per-node execution times
+float64 total_duration                 # Total execution time
+---
+# Feedback: Real-time progress updates
+string current_node                    # Currently processing node
+uint8 nodes_completed                  # Number of nodes completed
+uint8 total_nodes                      # Total number of nodes to process
+float32 progress_percentage            # Overall progress (0.0 to 100.0)
+string status_message                  # Current operation status

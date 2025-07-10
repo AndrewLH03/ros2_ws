@@ -17,7 +17,7 @@
 /home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/python3.12/site-packages/servo_control-0.0.0-py3.12.egg-info/SOURCES.txt
 /home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/python3.12/site-packages/servo_control-0.0.0-py3.12.egg-info/dependency_links.txt
 /home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/python3.12/site-packages/servo_control-0.0.0-py3.12.egg-info/requires.txt
-/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/ui/direct_servo_tester_node
-/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/ui/finger_servo_controller_node
-/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/ui/manual_servo_control_node
-/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/ui/servo_interface_node
+/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/servo_control/direct_servo_tester_node
+/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/servo_control/finger_servo_controller_node
+/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/servo_control/manual_servo_control_node
+/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/servo_control/servo_interface_node

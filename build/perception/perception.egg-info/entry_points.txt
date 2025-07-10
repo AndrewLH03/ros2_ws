@@ -1,0 +1,5 @@
+[console_scripts]
+body_pose_node = perception.body_pose_node:main
+coordinate_transform_node = perception.coordinate_transform_node:main
+hand_pose_node = perception.hand_pose_node:main
+pose_filter_node = perception.pose_filter_node:main

@@ -13,7 +13,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools', 'rclpy', 'lifecycle_msgs'],
     zip_safe=True,
     maintainer='Your Name',
     maintainer_email='user@example.com',
@@ -24,6 +24,8 @@ setup(
         'console_scripts': [
             'mode_switcher_node = ui.mode_switcher_node:main',
             'ui_dashboard_node = ui.ui_dashboard_node_modular:main',
+            'ui_dashboard_node_modular = ui.ui_dashboard_node_modular:main',
+            'lifecycle_manager = ui.lifecycle_manager:main',
         ],
     },
 )

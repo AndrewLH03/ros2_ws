@@ -1,0 +1,26 @@
+[2.009s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/control_system': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/control_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/control_system/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control_system build --build-base /home/andrewlh/VSCode/ros2_ws/build/control_system/build install --record /home/andrewlh/VSCode/ros2_ws/build/control_system/install.log --single-version-externally-managed install_data
+[2.787s] running egg_info
+[2.894s] writing ../../build/control_system/control_system.egg-info/PKG-INFO
+[2.895s] writing dependency_links to ../../build/control_system/control_system.egg-info/dependency_links.txt
+[2.895s] writing entry points to ../../build/control_system/control_system.egg-info/entry_points.txt
+[2.896s] writing requirements to ../../build/control_system/control_system.egg-info/requires.txt
+[2.896s] writing top-level names to ../../build/control_system/control_system.egg-info/top_level.txt
+[3.039s] reading manifest file '../../build/control_system/control_system.egg-info/SOURCES.txt'
+[3.041s] writing manifest file '../../build/control_system/control_system.egg-info/SOURCES.txt'
+[3.043s] running build
+[3.044s] running build_py
+[3.044s] running install
+[3.063s] running install_lib
+[3.138s] running install_data
+[3.139s] running install_egg_info
+[3.204s] removing '/home/andrewlh/VSCode/ros2_ws/install/control_system/lib/python3.12/site-packages/control_system-0.0.1-py3.12.egg-info' (and everything under it)
+[3.205s] Copying ../../build/control_system/control_system.egg-info to /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/python3.12/site-packages/control_system-0.0.1-py3.12.egg-info
+[3.217s] running install_scripts
+[3.575s] Installing manual_control_node script to /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/control_system
+[3.582s] Installing mode_manager_node script to /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/control_system
+[3.583s] Installing perception_control_node script to /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/control_system
+[3.583s] Installing servo_interface_lifecycle_node script to /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/control_system
+[3.583s] Installing servo_interface_node script to /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/control_system
+[3.583s] Installing unified_control_node script to /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/control_system
+[3.583s] writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/control_system/install.log'
+[3.707s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/control_system' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/control_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/control_system/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control_system build --build-base /home/andrewlh/VSCode/ros2_ws/build/control_system/build install --record /home/andrewlh/VSCode/ros2_ws/build/control_system/install.log --single-version-externally-managed install_data

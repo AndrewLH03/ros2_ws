@@ -1,0 +1,49 @@
+[3.732s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/perception': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/andrewlh/VSCode/ros2_ws/build/perception/build install --record /home/andrewlh/VSCode/ros2_ws/build/perception/install.log --single-version-externally-managed install_data
+[4.552s] running egg_info
+[4.555s] creating ../../build/perception/perception.egg-info
+[4.602s] writing ../../build/perception/perception.egg-info/PKG-INFO
+[4.602s] writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt
+[4.604s] writing entry points to ../../build/perception/perception.egg-info/entry_points.txt
+[4.604s] writing requirements to ../../build/perception/perception.egg-info/requires.txt
+[4.604s] writing top-level names to ../../build/perception/perception.egg-info/top_level.txt
+[4.604s] writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[4.701s] reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[4.703s] writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[4.710s] running build
+[4.710s] running build_py
+[4.710s] creating /home/andrewlh/VSCode/ros2_ws/build/perception/build
+[4.710s] creating /home/andrewlh/VSCode/ros2_ws/build/perception/build/lib
+[4.710s] creating /home/andrewlh/VSCode/ros2_ws/build/perception/build/lib/perception
+[4.711s] copying perception/__init__.py -> /home/andrewlh/VSCode/ros2_ws/build/perception/build/lib/perception
+[4.717s] copying perception/coordinate_transform_node.py -> /home/andrewlh/VSCode/ros2_ws/build/perception/build/lib/perception
+[4.717s] copying perception/pose_filter_node.py -> /home/andrewlh/VSCode/ros2_ws/build/perception/build/lib/perception
+[4.717s] copying perception/hand_pose_node.py -> /home/andrewlh/VSCode/ros2_ws/build/perception/build/lib/perception
+[4.718s] copying perception/body_pose_node.py -> /home/andrewlh/VSCode/ros2_ws/build/perception/build/lib/perception
+[4.719s] running install
+[4.746s] running install_lib
+[4.811s] creating /home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages/perception
+[4.822s] copying /home/andrewlh/VSCode/ros2_ws/build/perception/build/lib/perception/__init__.py -> /home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages/perception
+[4.822s] copying /home/andrewlh/VSCode/ros2_ws/build/perception/build/lib/perception/coordinate_transform_node.py -> /home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages/perception
+[4.822s] copying /home/andrewlh/VSCode/ros2_ws/build/perception/build/lib/perception/pose_filter_node.py -> /home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages/perception
+[4.822s] copying /home/andrewlh/VSCode/ros2_ws/build/perception/build/lib/perception/hand_pose_node.py -> /home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages/perception
+[4.822s] copying /home/andrewlh/VSCode/ros2_ws/build/perception/build/lib/perception/body_pose_node.py -> /home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages/perception
+[4.823s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages/perception/__init__.py to __init__.cpython-312.pyc
+[4.825s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages/perception/coordinate_transform_node.py to coordinate_transform_node.cpython-312.pyc
+[4.834s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages/perception/pose_filter_node.py to pose_filter_node.cpython-312.pyc
+[4.834s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages/perception/hand_pose_node.py to hand_pose_node.cpython-312.pyc
+[4.835s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages/perception/body_pose_node.py to body_pose_node.cpython-312.pyc
+[4.836s] running install_data
+[4.836s] creating /home/andrewlh/VSCode/ros2_ws/install/perception/share/ament_index
+[4.836s] creating /home/andrewlh/VSCode/ros2_ws/install/perception/share/ament_index/resource_index
+[4.836s] creating /home/andrewlh/VSCode/ros2_ws/install/perception/share/ament_index/resource_index/packages
+[4.837s] copying resource/perception -> /home/andrewlh/VSCode/ros2_ws/install/perception/share/ament_index/resource_index/packages
+[4.845s] copying package.xml -> /home/andrewlh/VSCode/ros2_ws/install/perception/share/perception
+[4.849s] running install_egg_info
+[4.929s] Copying ../../build/perception/perception.egg-info to /home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages/perception-0.1.0-py3.12.egg-info
+[4.929s] running install_scripts
+[5.314s] Installing body_pose_node script to /home/andrewlh/VSCode/ros2_ws/install/perception/lib/perception
+[5.314s] Installing coordinate_transform_node script to /home/andrewlh/VSCode/ros2_ws/install/perception/lib/perception
+[5.314s] Installing hand_pose_node script to /home/andrewlh/VSCode/ros2_ws/install/perception/lib/perception
+[5.314s] Installing pose_filter_node script to /home/andrewlh/VSCode/ros2_ws/install/perception/lib/perception
+[5.314s] writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/perception/install.log'
+[5.372s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/perception' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/andrewlh/VSCode/ros2_ws/build/perception/build install --record /home/andrewlh/VSCode/ros2_ws/build/perception/install.log --single-version-externally-managed install_data

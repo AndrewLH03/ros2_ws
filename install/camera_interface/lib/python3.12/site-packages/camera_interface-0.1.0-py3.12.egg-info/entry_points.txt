@@ -1,0 +1,4 @@
+[console_scripts]
+camera_info_node = camera_interface.camera_info_node:main
+camera_lifecycle_node = camera_interface.camera_lifecycle_node:main
+camera_node = camera_interface.camera_node:main

@@ -1,0 +1,54 @@
+[1.310s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/ui': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ui build --build-base /home/andrewlh/VSCode/ros2_ws/build/ui/build install --record /home/andrewlh/VSCode/ros2_ws/build/ui/install.log --single-version-externally-managed install_data
+[1.605s] running egg_info
+[1.605s] creating ../../build/ui/ui.egg-info
+[1.624s] writing ../../build/ui/ui.egg-info/PKG-INFO
+[1.624s] writing dependency_links to ../../build/ui/ui.egg-info/dependency_links.txt
+[1.625s] writing entry points to ../../build/ui/ui.egg-info/entry_points.txt
+[1.625s] writing requirements to ../../build/ui/ui.egg-info/requires.txt
+[1.626s] writing top-level names to ../../build/ui/ui.egg-info/top_level.txt
+[1.626s] writing manifest file '../../build/ui/ui.egg-info/SOURCES.txt'
+[1.668s] reading manifest file '../../build/ui/ui.egg-info/SOURCES.txt'
+[1.669s] writing manifest file '../../build/ui/ui.egg-info/SOURCES.txt'
+[1.669s] running build
+[1.669s] running build_py
+[1.669s] creating /home/andrewlh/VSCode/ros2_ws/build/ui/build
+[1.670s] creating /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib
+[1.670s] creating /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui
+[1.670s] copying ui/__init__.py -> /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui
+[1.680s] copying ui/mode_switcher_node.py -> /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui
+[1.684s] copying ui/ui_visualization.py -> /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui
+[1.684s] copying ui/ui_window_manager.py -> /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui
+[1.685s] copying ui/ui_button_controller.py -> /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui
+[1.685s] copying ui/ui_dashboard_node_modular.py -> /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui
+[1.686s] copying ui/lifecycle_manager.py -> /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui
+[1.686s] running install
+[1.691s] running install_lib
+[1.712s] creating /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui
+[1.712s] copying /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui/__init__.py -> /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui
+[1.712s] copying /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui/mode_switcher_node.py -> /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui
+[1.712s] copying /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui/ui_visualization.py -> /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui
+[1.712s] copying /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui/ui_window_manager.py -> /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui
+[1.713s] copying /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui/ui_button_controller.py -> /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui
+[1.713s] copying /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui/ui_dashboard_node_modular.py -> /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui
+[1.713s] copying /home/andrewlh/VSCode/ros2_ws/build/ui/build/lib/ui/lifecycle_manager.py -> /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui
+[1.714s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/__init__.py to __init__.cpython-312.pyc
+[1.715s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/mode_switcher_node.py to mode_switcher_node.cpython-312.pyc
+[1.716s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/ui_visualization.py to ui_visualization.cpython-312.pyc
+[1.719s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/ui_window_manager.py to ui_window_manager.cpython-312.pyc
+[1.720s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/ui_button_controller.py to ui_button_controller.cpython-312.pyc
+[1.723s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/ui_dashboard_node_modular.py to ui_dashboard_node_modular.cpython-312.pyc
+[1.724s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui/lifecycle_manager.py to lifecycle_manager.cpython-312.pyc
+[1.726s] running install_data
+[1.726s] creating /home/andrewlh/VSCode/ros2_ws/install/ui/share/ament_index
+[1.726s] creating /home/andrewlh/VSCode/ros2_ws/install/ui/share/ament_index/resource_index
+[1.727s] creating /home/andrewlh/VSCode/ros2_ws/install/ui/share/ament_index/resource_index/packages
+[1.727s] copying resource/ui -> /home/andrewlh/VSCode/ros2_ws/install/ui/share/ament_index/resource_index/packages
+[1.728s] copying package.xml -> /home/andrewlh/VSCode/ros2_ws/install/ui/share/ui
+[1.728s] running install_egg_info
+[1.753s] Copying ../../build/ui/ui.egg-info to /home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages/ui-0.1.0-py3.12.egg-info
+[1.754s] running install_scripts
+[1.888s] Installing lifecycle_manager script to /home/andrewlh/VSCode/ros2_ws/install/ui/lib/ui
+[1.888s] Installing mode_switcher_node script to /home/andrewlh/VSCode/ros2_ws/install/ui/lib/ui
+[1.888s] Installing ui_dashboard_node script to /home/andrewlh/VSCode/ros2_ws/install/ui/lib/ui
+[1.889s] writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/ui/install.log'
+[1.923s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/ui' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ui build --build-base /home/andrewlh/VSCode/ros2_ws/build/ui/build install --record /home/andrewlh/VSCode/ros2_ws/build/ui/install.log --single-version-externally-managed install_data

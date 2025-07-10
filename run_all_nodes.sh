@@ -74,6 +74,9 @@ done
 # Source ROS 2 installation first
 source /opt/ros/jazzy/setup.bash
 
+# Ensure we use system Python for ROS2 compatibility
+export PATH="/usr/bin:$PATH"
+
 # Move to workspace root
 cd ~/VSCode/ros2_ws
 

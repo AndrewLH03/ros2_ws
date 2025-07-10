@@ -13,7 +13,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools', 'rclpy', 'lifecycle_msgs'],
     zip_safe=True,
     maintainer='Andrew Holland',
     maintainer_email='AndrewLloydHolland@gmail.com',
@@ -23,6 +23,7 @@ setup(
     entry_points={
         'console_scripts': [
             'camera_node = camera_interface.camera_node:main',
+            'camera_lifecycle_node = camera_interface.camera_lifecycle_node:main',
             'camera_info_node = camera_interface.camera_info_node:main',
         ],
     },

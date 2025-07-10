@@ -1,0 +1,29 @@
+[1.299s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/control_system': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/control_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/control_system/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control_system build --build-base /home/andrewlh/VSCode/ros2_ws/build/control_system/build install --record /home/andrewlh/VSCode/ros2_ws/build/control_system/install.log --single-version-externally-managed install_data
+[1.662s] running egg_info
+[1.685s] writing ../../build/control_system/control_system.egg-info/PKG-INFO
+[1.686s] writing dependency_links to ../../build/control_system/control_system.egg-info/dependency_links.txt
+[1.686s] writing entry points to ../../build/control_system/control_system.egg-info/entry_points.txt
+[1.687s] writing requirements to ../../build/control_system/control_system.egg-info/requires.txt
+[1.687s] writing top-level names to ../../build/control_system/control_system.egg-info/top_level.txt
+[1.743s] reading manifest file '../../build/control_system/control_system.egg-info/SOURCES.txt'
+[1.745s] writing manifest file '../../build/control_system/control_system.egg-info/SOURCES.txt'
+[1.745s] running build
+[1.746s] running build_py
+[1.746s] copying control_system/servo_interface_lifecycle_node.py -> /home/andrewlh/VSCode/ros2_ws/build/control_system/build/lib/control_system
+[1.746s] running install
+[1.755s] running install_lib
+[1.788s] copying /home/andrewlh/VSCode/ros2_ws/build/control_system/build/lib/control_system/servo_interface_lifecycle_node.py -> /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/python3.12/site-packages/control_system
+[1.789s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/python3.12/site-packages/control_system/servo_interface_lifecycle_node.py to servo_interface_lifecycle_node.cpython-312.pyc
+[1.792s] running install_data
+[1.793s] running install_egg_info
+[1.818s] removing '/home/andrewlh/VSCode/ros2_ws/install/control_system/lib/python3.12/site-packages/control_system-0.0.1-py3.12.egg-info' (and everything under it)
+[1.818s] Copying ../../build/control_system/control_system.egg-info to /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/python3.12/site-packages/control_system-0.0.1-py3.12.egg-info
+[1.822s] running install_scripts
+[2.002s] Installing manual_control_node script to /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/control_system
+[2.002s] Installing mode_manager_node script to /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/control_system
+[2.002s] Installing perception_control_node script to /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/control_system
+[2.003s] Installing servo_interface_lifecycle_node script to /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/control_system
+[2.013s] Installing servo_interface_node script to /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/control_system
+[2.013s] Installing unified_control_node script to /home/andrewlh/VSCode/ros2_ws/install/control_system/lib/control_system
+[2.013s] writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/control_system/install.log'
+[2.064s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/control_system' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/control_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/control_system/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control_system build --build-base /home/andrewlh/VSCode/ros2_ws/build/control_system/build install --record /home/andrewlh/VSCode/ros2_ws/build/control_system/install.log --single-version-externally-managed install_data

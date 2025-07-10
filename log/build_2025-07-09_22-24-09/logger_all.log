@@ -1,0 +1,542 @@
+[0.342s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.342s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7ec89c87b770>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ec89c87b140>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ec89c87b140>>, mixin_verb=('build',))
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.393s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/andrewlh/VSCode/ros2_ws'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extensions ['ignore', 'ignore_ament_install']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'ignore'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'ignore_ament_install'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extensions ['colcon_pkg']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'colcon_pkg'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extensions ['colcon_meta']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'colcon_meta'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extensions ['ros']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'ros'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extensions ['cmake', 'python']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'cmake'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'python'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extensions ['python_setup_py']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'python_setup_py'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_interface) by extension 'ignore'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_interface) by extension 'ignore_ament_install'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_interface) by extensions ['colcon_pkg']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_interface) by extension 'colcon_pkg'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_interface) by extensions ['colcon_meta']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_interface) by extension 'colcon_meta'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_interface) by extensions ['ros']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_interface) by extension 'ros'
+[0.426s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera_interface' with type 'ros.ament_python' and name 'camera_interface'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['ignore', 'ignore_ament_install']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ignore'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ignore_ament_install'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['colcon_pkg']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'colcon_pkg'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['colcon_meta']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'colcon_meta'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['ros']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ros'
+[0.428s] DEBUG:colcon.colcon_core.package_identification:Package 'src/control' with type 'ros.ament_python' and name 'control'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_system) by extensions ['ignore', 'ignore_ament_install']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_system) by extension 'ignore'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_system) by extension 'ignore_ament_install'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_system) by extensions ['colcon_pkg']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_system) by extension 'colcon_pkg'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_system) by extensions ['colcon_meta']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_system) by extension 'colcon_meta'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_system) by extensions ['ros']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_system) by extension 'ros'
+[0.429s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'src/control_system': Error(s) in package 'src/control_system/package.xml':
+The manifest contains invalid XML:
+no element found: line 1, column 0
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_system) by extensions ['cmake', 'python']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_system) by extension 'cmake'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_system) by extension 'python'
+[0.429s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/control_system' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_system) by extensions ['python_setup_py']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/control_system) by extension 'python_setup_py'
+[0.661s] DEBUG:colcon.colcon_core.package_identification:Package 'src/control_system' with type 'python' and name 'control_system'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/cr3_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/cr3_interface) by extension 'ignore'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/cr3_interface) by extension 'ignore_ament_install'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/cr3_interface) by extensions ['colcon_pkg']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/cr3_interface) by extension 'colcon_pkg'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/cr3_interface) by extensions ['colcon_meta']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/cr3_interface) by extension 'colcon_meta'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/cr3_interface) by extensions ['ros']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/cr3_interface) by extension 'ros'
+[0.662s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cr3_interface' with type 'ros.ament_python' and name 'cr3_interface'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/diagnostics) by extensions ['ignore', 'ignore_ament_install']
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/diagnostics) by extension 'ignore'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/diagnostics) by extension 'ignore_ament_install'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/diagnostics) by extensions ['colcon_pkg']
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/diagnostics) by extension 'colcon_pkg'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/diagnostics) by extensions ['colcon_meta']
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/diagnostics) by extension 'colcon_meta'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/diagnostics) by extensions ['ros']
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/diagnostics) by extension 'ros'
+[0.664s] DEBUG:colcon.colcon_core.package_identification:Package 'src/diagnostics' with type 'ros.ament_python' and name 'diagnostics'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extensions ['ignore', 'ignore_ament_install']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'ignore'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'ignore_ament_install'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extensions ['colcon_pkg']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'colcon_pkg'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extensions ['colcon_meta']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'colcon_meta'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extensions ['ros']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'ros'
+[0.665s] DEBUG:colcon.colcon_core.package_identification:Package 'src/perception' with type 'ros.ament_python' and name 'perception'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_control) by extensions ['ignore', 'ignore_ament_install']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_control) by extension 'ignore'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_control) by extension 'ignore_ament_install'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_control) by extensions ['colcon_pkg']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_control) by extension 'colcon_pkg'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_control) by extensions ['colcon_meta']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_control) by extension 'colcon_meta'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_control) by extensions ['ros']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_control) by extension 'ros'
+[0.666s] DEBUG:colcon.colcon_core.package_identification:Package 'src/servo_control' with type 'ros.ament_python' and name 'servo_control'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_interface) by extension 'ignore'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_interface) by extension 'ignore_ament_install'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_interface) by extensions ['colcon_pkg']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_interface) by extension 'colcon_pkg'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_interface) by extensions ['colcon_meta']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_interface) by extension 'colcon_meta'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_interface) by extensions ['ros']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_interface) by extension 'ros'
+[0.668s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sim_interface' with type 'ros.ament_python' and name 'sim_interface'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/ui) by extensions ['ignore', 'ignore_ament_install']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/ui) by extension 'ignore'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/ui) by extension 'ignore_ament_install'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/ui) by extensions ['colcon_pkg']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/ui) by extension 'colcon_pkg'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/ui) by extensions ['colcon_meta']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/ui) by extension 'colcon_meta'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/ui) by extensions ['ros']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/ui) by extension 'ros'
+[0.670s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ui' with type 'ros.ament_python' and name 'ui'
+[0.670s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.670s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.670s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.670s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.670s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.697s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.697s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.703s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 318 installed packages in /opt/ros/jazzy
+[0.704s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'camera_interface' build argument 'cmake_args' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'camera_interface' build argument 'cmake_target' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'camera_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'camera_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'camera_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'camera_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'camera_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'camera_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'camera_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.753s] DEBUG:colcon.colcon_core.verb:Building package 'camera_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andrewlh/VSCode/ros2_ws/build/camera_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andrewlh/VSCode/ros2_ws/install/camera_interface', 'merge_install': False, 'path': '/home/andrewlh/VSCode/ros2_ws/src/camera_interface', 'symlink_install': False, 'test_result_base': None}
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_args' from command line to 'None'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_target' from command line to 'None'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_clean_first' from command line to 'False'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_force_configure' from command line to 'False'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'ament_cmake_args' from command line to 'None'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.755s] DEBUG:colcon.colcon_core.verb:Building package 'control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andrewlh/VSCode/ros2_ws/build/control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andrewlh/VSCode/ros2_ws/install/control', 'merge_install': False, 'path': '/home/andrewlh/VSCode/ros2_ws/src/control', 'symlink_install': False, 'test_result_base': None}
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'control_system' build argument 'cmake_args' from command line to 'None'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'control_system' build argument 'cmake_target' from command line to 'None'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'control_system' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'control_system' build argument 'cmake_clean_cache' from command line to 'False'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'control_system' build argument 'cmake_clean_first' from command line to 'False'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'control_system' build argument 'cmake_force_configure' from command line to 'False'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'control_system' build argument 'ament_cmake_args' from command line to 'None'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'control_system' build argument 'catkin_cmake_args' from command line to 'None'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'control_system' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.756s] DEBUG:colcon.colcon_core.verb:Building package 'control_system' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andrewlh/VSCode/ros2_ws/build/control_system', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andrewlh/VSCode/ros2_ws/install/control_system', 'merge_install': False, 'path': '/home/andrewlh/VSCode/ros2_ws/src/control_system', 'symlink_install': False, 'test_result_base': None}
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'cr3_interface' build argument 'cmake_args' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'cr3_interface' build argument 'cmake_target' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'cr3_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'cr3_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'cr3_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'cr3_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'cr3_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'cr3_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'cr3_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.758s] DEBUG:colcon.colcon_core.verb:Building package 'cr3_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andrewlh/VSCode/ros2_ws/build/cr3_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface', 'merge_install': False, 'path': '/home/andrewlh/VSCode/ros2_ws/src/cr3_interface', 'symlink_install': False, 'test_result_base': None}
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'cmake_args' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'cmake_target' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'cmake_clean_first' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'cmake_force_configure' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'ament_cmake_args' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.758s] DEBUG:colcon.colcon_core.verb:Building package 'diagnostics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andrewlh/VSCode/ros2_ws/build/diagnostics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andrewlh/VSCode/ros2_ws/install/diagnostics', 'merge_install': False, 'path': '/home/andrewlh/VSCode/ros2_ws/src/diagnostics', 'symlink_install': False, 'test_result_base': None}
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_args' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_target' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_clean_cache' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_clean_first' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_force_configure' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'ament_cmake_args' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'catkin_cmake_args' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.759s] DEBUG:colcon.colcon_core.verb:Building package 'perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andrewlh/VSCode/ros2_ws/build/perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andrewlh/VSCode/ros2_ws/install/perception', 'merge_install': False, 'path': '/home/andrewlh/VSCode/ros2_ws/src/perception', 'symlink_install': False, 'test_result_base': None}
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'servo_control' build argument 'cmake_args' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'servo_control' build argument 'cmake_target' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'servo_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'servo_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'servo_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'servo_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'servo_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'servo_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'servo_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.760s] DEBUG:colcon.colcon_core.verb:Building package 'servo_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andrewlh/VSCode/ros2_ws/build/servo_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andrewlh/VSCode/ros2_ws/install/servo_control', 'merge_install': False, 'path': '/home/andrewlh/VSCode/ros2_ws/src/servo_control', 'symlink_install': False, 'test_result_base': None}
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'sim_interface' build argument 'cmake_args' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'sim_interface' build argument 'cmake_target' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'sim_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'sim_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'sim_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'sim_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'sim_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'sim_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'sim_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.760s] DEBUG:colcon.colcon_core.verb:Building package 'sim_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andrewlh/VSCode/ros2_ws/build/sim_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andrewlh/VSCode/ros2_ws/install/sim_interface', 'merge_install': False, 'path': '/home/andrewlh/VSCode/ros2_ws/src/sim_interface', 'symlink_install': False, 'test_result_base': None}
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'ui' build argument 'cmake_args' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'ui' build argument 'cmake_target' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'ui' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'ui' build argument 'cmake_clean_cache' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'ui' build argument 'cmake_clean_first' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'ui' build argument 'cmake_force_configure' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'ui' build argument 'ament_cmake_args' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'ui' build argument 'catkin_cmake_args' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'ui' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.760s] DEBUG:colcon.colcon_core.verb:Building package 'ui' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/andrewlh/VSCode/ros2_ws/build/ui', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/andrewlh/VSCode/ros2_ws/install/ui', 'merge_install': False, 'path': '/home/andrewlh/VSCode/ros2_ws/src/ui', 'symlink_install': False, 'test_result_base': None}
+[0.760s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.762s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.762s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/andrewlh/VSCode/ros2_ws/src/camera_interface' with build type 'ament_python'
+[0.762s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_interface', 'ament_prefix_path')
+[0.767s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.768s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/camera_interface/hook/ament_prefix_path.ps1'
+[0.769s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/camera_interface/hook/ament_prefix_path.dsv'
+[0.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/camera_interface/hook/ament_prefix_path.sh'
+[0.770s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.770s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.776s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/andrewlh/VSCode/ros2_ws/src/control' with build type 'ament_python'
+[0.776s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'ament_prefix_path')
+[0.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/control/share/control/hook/ament_prefix_path.ps1'
+[0.778s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/control/share/control/hook/ament_prefix_path.dsv'
+[0.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/control/share/control/hook/ament_prefix_path.sh'
+[0.779s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.779s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.782s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/andrewlh/VSCode/ros2_ws/src/control_system'
+[0.783s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.783s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.787s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/andrewlh/VSCode/ros2_ws/src/cr3_interface' with build type 'ament_python'
+[0.787s] Level 1:colcon.colcon_core.shell:create_environment_hook('cr3_interface', 'ament_prefix_path')
+[0.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/cr3_interface/hook/ament_prefix_path.ps1'
+[0.789s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/cr3_interface/hook/ament_prefix_path.dsv'
+[0.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/cr3_interface/hook/ament_prefix_path.sh'
+[0.792s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.792s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.795s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/andrewlh/VSCode/ros2_ws/src/diagnostics' with build type 'ament_python'
+[0.796s] Level 1:colcon.colcon_core.shell:create_environment_hook('diagnostics', 'ament_prefix_path')
+[0.796s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/diagnostics/hook/ament_prefix_path.ps1'
+[0.798s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/diagnostics/hook/ament_prefix_path.dsv'
+[0.798s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/diagnostics/hook/ament_prefix_path.sh'
+[0.799s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.799s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.805s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/andrewlh/VSCode/ros2_ws/src/perception' with build type 'ament_python'
+[0.805s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception', 'ament_prefix_path')
+[0.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/perception/share/perception/hook/ament_prefix_path.ps1'
+[0.810s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/perception/share/perception/hook/ament_prefix_path.dsv'
+[0.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/perception/share/perception/hook/ament_prefix_path.sh'
+[0.811s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.811s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.815s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/andrewlh/VSCode/ros2_ws/src/servo_control' with build type 'ament_python'
+[0.815s] Level 1:colcon.colcon_core.shell:create_environment_hook('servo_control', 'ament_prefix_path')
+[0.816s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/servo_control/share/servo_control/hook/ament_prefix_path.ps1'
+[0.817s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/servo_control/share/servo_control/hook/ament_prefix_path.dsv'
+[0.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/servo_control/share/servo_control/hook/ament_prefix_path.sh'
+[0.818s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.818s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.823s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/andrewlh/VSCode/ros2_ws/src/sim_interface' with build type 'ament_python'
+[0.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim_interface', 'ament_prefix_path')
+[0.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/share/sim_interface/hook/ament_prefix_path.ps1'
+[0.826s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/share/sim_interface/hook/ament_prefix_path.dsv'
+[0.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/share/sim_interface/hook/ament_prefix_path.sh'
+[0.828s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.828s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.063s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/andrewlh/VSCode/ros2_ws/src/camera_interface'
+[1.063s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.063s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.298s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/andrewlh/VSCode/ros2_ws/src/control'
+[1.299s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.299s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.838s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/andrewlh/VSCode/ros2_ws/src/cr3_interface'
+[1.838s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.838s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.160s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/andrewlh/VSCode/ros2_ws/src/diagnostics'
+[2.160s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.160s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.429s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/andrewlh/VSCode/ros2_ws/src/perception'
+[2.430s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.430s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.644s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/andrewlh/VSCode/ros2_ws/src/servo_control'
+[2.644s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.644s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.889s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/andrewlh/VSCode/ros2_ws/src/sim_interface'
+[2.889s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.889s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/control_system': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/control_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/control_system/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control_system build --build-base /home/andrewlh/VSCode/ros2_ws/build/control_system/build install --record /home/andrewlh/VSCode/ros2_ws/build/control_system/install.log --single-version-externally-managed install_data
+[4.537s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/perception': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/andrewlh/VSCode/ros2_ws/build/perception/build install --record /home/andrewlh/VSCode/ros2_ws/build/perception/install.log --single-version-externally-managed install_data
+[4.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/cr3_interface': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/cr3_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cr3_interface build --build-base /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build install --record /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/install.log --single-version-externally-managed install_data
+[4.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/control': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control build --build-base /home/andrewlh/VSCode/ros2_ws/build/control/build install --record /home/andrewlh/VSCode/ros2_ws/build/control/install.log --single-version-externally-managed install_data
+[4.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/sim_interface': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/sim_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/sim_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sim_interface build --build-base /home/andrewlh/VSCode/ros2_ws/build/sim_interface/build install --record /home/andrewlh/VSCode/ros2_ws/build/sim_interface/install.log --single-version-externally-managed install_data
+[5.013s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/control_system' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/control_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/control_system/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control_system build --build-base /home/andrewlh/VSCode/ros2_ws/build/control_system/build install --record /home/andrewlh/VSCode/ros2_ws/build/control_system/install.log --single-version-externally-managed install_data
+[5.016s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/control_system' for CMake module files
+[5.018s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/control_system' for CMake config files
+[5.020s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/control_system/lib'
+[5.020s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/control_system/bin'
+[5.021s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/control_system/lib/pkgconfig/control_system.pc'
+[5.021s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/control_system/lib/python3.12/site-packages'
+[5.022s] Level 1:colcon.colcon_core.shell:create_environment_hook('control_system', 'pythonpath')
+[5.022s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/control_system/share/control_system/hook/pythonpath.ps1'
+[5.024s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/control_system/share/control_system/hook/pythonpath.dsv'
+[5.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/control_system/share/control_system/hook/pythonpath.sh'
+[5.028s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/control_system/bin'
+[5.028s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control_system)
+[5.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/control_system/share/control_system/package.ps1'
+[5.034s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrewlh/VSCode/ros2_ws/install/control_system/share/control_system/package.dsv'
+[5.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/control_system/share/control_system/package.sh'
+[5.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/control_system/share/control_system/package.bash'
+[5.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/control_system/share/control_system/package.zsh'
+[5.040s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrewlh/VSCode/ros2_ws/install/control_system/share/colcon-core/packages/control_system)
+[5.043s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/andrewlh/VSCode/ros2_ws/src/ui' with build type 'ament_python'
+[5.044s] Level 1:colcon.colcon_core.shell:create_environment_hook('ui', 'ament_prefix_path')
+[5.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/ui/share/ui/hook/ament_prefix_path.ps1'
+[5.046s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/ui/share/ui/hook/ament_prefix_path.dsv'
+[5.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/ui/share/ui/hook/ament_prefix_path.sh'
+[5.054s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.054s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.589s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/andrewlh/VSCode/ros2_ws/src/ui'
+[5.590s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.590s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.603s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/diagnostics': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/diagnostics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/diagnostics build --build-base /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build install --record /home/andrewlh/VSCode/ros2_ws/build/diagnostics/install.log --single-version-externally-managed install_data
+[5.616s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/servo_control': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/servo_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/servo_control build --build-base /home/andrewlh/VSCode/ros2_ws/build/servo_control/build install --record /home/andrewlh/VSCode/ros2_ws/build/servo_control/install.log --single-version-externally-managed install_data
+[5.630s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/camera_interface': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/camera_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_interface build --build-base /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build install --record /home/andrewlh/VSCode/ros2_ws/build/camera_interface/install.log --single-version-externally-managed install_data
+[6.099s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/sim_interface' for CMake module files
+[6.101s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/sim_interface' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/sim_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/sim_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sim_interface build --build-base /home/andrewlh/VSCode/ros2_ws/build/sim_interface/build install --record /home/andrewlh/VSCode/ros2_ws/build/sim_interface/install.log --single-version-externally-managed install_data
+[6.102s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/sim_interface' for CMake config files
+[6.102s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/lib'
+[6.103s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/bin'
+[6.103s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/lib/pkgconfig/sim_interface.pc'
+[6.103s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/lib/python3.12/site-packages'
+[6.103s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim_interface', 'pythonpath')
+[6.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/share/sim_interface/hook/pythonpath.ps1'
+[6.105s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/share/sim_interface/hook/pythonpath.dsv'
+[6.105s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/share/sim_interface/hook/pythonpath.sh'
+[6.112s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/bin'
+[6.113s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sim_interface)
+[6.113s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/share/sim_interface/package.ps1'
+[6.115s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/share/sim_interface/package.dsv'
+[6.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/share/sim_interface/package.sh'
+[6.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/share/sim_interface/package.bash'
+[6.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/sim_interface/share/sim_interface/package.zsh'
+[6.118s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrewlh/VSCode/ros2_ws/install/sim_interface/share/colcon-core/packages/sim_interface)
+[6.123s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/control' for CMake module files
+[6.124s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/control' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control build --build-base /home/andrewlh/VSCode/ros2_ws/build/control/build install --record /home/andrewlh/VSCode/ros2_ws/build/control/install.log --single-version-externally-managed install_data
+[6.125s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/control' for CMake config files
+[6.127s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/control/lib'
+[6.127s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/control/bin'
+[6.127s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/control/lib/pkgconfig/control.pc'
+[6.128s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/control/lib/python3.12/site-packages'
+[6.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'pythonpath')
+[6.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/control/share/control/hook/pythonpath.ps1'
+[6.129s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/control/share/control/hook/pythonpath.dsv'
+[6.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/control/share/control/hook/pythonpath.sh'
+[6.132s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/control/bin'
+[6.132s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control)
+[6.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/control/share/control/package.ps1'
+[6.134s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrewlh/VSCode/ros2_ws/install/control/share/control/package.dsv'
+[6.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/control/share/control/package.sh'
+[6.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/control/share/control/package.bash'
+[6.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/control/share/control/package.zsh'
+[6.138s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrewlh/VSCode/ros2_ws/install/control/share/colcon-core/packages/control)
+[6.177s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/perception' for CMake module files
+[6.178s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/perception' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/andrewlh/VSCode/ros2_ws/build/perception/build install --record /home/andrewlh/VSCode/ros2_ws/build/perception/install.log --single-version-externally-managed install_data
+[6.179s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/perception' for CMake config files
+[6.180s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/perception/lib'
+[6.180s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/perception/bin'
+[6.180s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/perception/lib/pkgconfig/perception.pc'
+[6.181s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/perception/lib/python3.12/site-packages'
+[6.181s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception', 'pythonpath')
+[6.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/perception/share/perception/hook/pythonpath.ps1'
+[6.182s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/perception/share/perception/hook/pythonpath.dsv'
+[6.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/perception/share/perception/hook/pythonpath.sh'
+[6.185s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/perception/bin'
+[6.185s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(perception)
+[6.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/perception/share/perception/package.ps1'
+[6.187s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrewlh/VSCode/ros2_ws/install/perception/share/perception/package.dsv'
+[6.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/perception/share/perception/package.sh'
+[6.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/perception/share/perception/package.bash'
+[6.190s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/perception/share/perception/package.zsh'
+[6.190s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrewlh/VSCode/ros2_ws/install/perception/share/colcon-core/packages/perception)
+[6.283s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface' for CMake module files
+[6.284s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/cr3_interface' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/cr3_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cr3_interface build --build-base /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build install --record /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/install.log --single-version-externally-managed install_data
+[6.285s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface' for CMake config files
+[6.286s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib'
+[6.286s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/bin'
+[6.286s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/pkgconfig/cr3_interface.pc'
+[6.286s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages'
+[6.287s] Level 1:colcon.colcon_core.shell:create_environment_hook('cr3_interface', 'pythonpath')
+[6.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/cr3_interface/hook/pythonpath.ps1'
+[6.288s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/cr3_interface/hook/pythonpath.dsv'
+[6.288s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/cr3_interface/hook/pythonpath.sh'
+[6.289s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/bin'
+[6.289s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cr3_interface)
+[6.290s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/cr3_interface/package.ps1'
+[6.291s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/cr3_interface/package.dsv'
+[6.293s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/cr3_interface/package.sh'
+[6.294s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/cr3_interface/package.bash'
+[6.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/cr3_interface/package.zsh'
+[6.296s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/share/colcon-core/packages/cr3_interface)
+[7.147s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/camera_interface' for CMake module files
+[7.148s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/camera_interface' for CMake config files
+[7.149s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib'
+[7.150s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/bin'
+[7.150s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/pkgconfig/camera_interface.pc'
+[7.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/camera_interface' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/camera_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_interface build --build-base /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build install --record /home/andrewlh/VSCode/ros2_ws/build/camera_interface/install.log --single-version-externally-managed install_data
+[7.156s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages'
+[7.157s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_interface', 'pythonpath')
+[7.157s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/camera_interface/hook/pythonpath.ps1'
+[7.158s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/camera_interface/hook/pythonpath.dsv'
+[7.159s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/camera_interface/hook/pythonpath.sh'
+[7.160s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/bin'
+[7.160s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_interface)
+[7.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/camera_interface/package.ps1'
+[7.162s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/camera_interface/package.dsv'
+[7.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/camera_interface/package.sh'
+[7.172s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/camera_interface/package.bash'
+[7.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/camera_interface/package.zsh'
+[7.174s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/colcon-core/packages/camera_interface)
+[7.193s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/diagnostics' for CMake module files
+[7.195s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/diagnostics' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/diagnostics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/diagnostics build --build-base /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build install --record /home/andrewlh/VSCode/ros2_ws/build/diagnostics/install.log --single-version-externally-managed install_data
+[7.196s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/diagnostics' for CMake config files
+[7.198s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib'
+[7.198s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/bin'
+[7.198s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/pkgconfig/diagnostics.pc'
+[7.199s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages'
+[7.199s] Level 1:colcon.colcon_core.shell:create_environment_hook('diagnostics', 'pythonpath')
+[7.199s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/diagnostics/hook/pythonpath.ps1'
+[7.200s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/diagnostics/hook/pythonpath.dsv'
+[7.201s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/diagnostics/hook/pythonpath.sh'
+[7.202s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/bin'
+[7.202s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diagnostics)
+[7.211s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/diagnostics/package.ps1'
+[7.213s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/diagnostics/package.dsv'
+[7.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/diagnostics/package.sh'
+[7.216s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/diagnostics/package.bash'
+[7.216s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/diagnostics/package.zsh'
+[7.217s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/colcon-core/packages/diagnostics)
+[7.232s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/servo_control' for CMake module files
+[7.234s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/servo_control' for CMake config files
+[7.235s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib'
+[7.235s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/servo_control/bin'
+[7.236s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/pkgconfig/servo_control.pc'
+[7.236s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/python3.12/site-packages'
+[7.236s] Level 1:colcon.colcon_core.shell:create_environment_hook('servo_control', 'pythonpath')
+[7.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/servo_control/share/servo_control/hook/pythonpath.ps1'
+[7.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/servo_control/share/servo_control/hook/pythonpath.dsv'
+[7.232s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/servo_control' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/servo_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/servo_control build --build-base /home/andrewlh/VSCode/ros2_ws/build/servo_control/build install --record /home/andrewlh/VSCode/ros2_ws/build/servo_control/install.log --single-version-externally-managed install_data
+[7.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/servo_control/share/servo_control/hook/pythonpath.sh'
+[7.245s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/servo_control/bin'
+[7.245s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(servo_control)
+[7.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/servo_control/share/servo_control/package.ps1'
+[7.247s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrewlh/VSCode/ros2_ws/install/servo_control/share/servo_control/package.dsv'
+[7.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/servo_control/share/servo_control/package.sh'
+[7.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/servo_control/share/servo_control/package.bash'
+[7.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/servo_control/share/servo_control/package.zsh'
+[7.260s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrewlh/VSCode/ros2_ws/install/servo_control/share/colcon-core/packages/servo_control)
+[7.301s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/ui': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ui build --build-base /home/andrewlh/VSCode/ros2_ws/build/ui/build install --record /home/andrewlh/VSCode/ros2_ws/build/ui/install.log --single-version-externally-managed install_data
+[8.463s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/ui' for CMake module files
+[8.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/ui' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ui build --build-base /home/andrewlh/VSCode/ros2_ws/build/ui/build install --record /home/andrewlh/VSCode/ros2_ws/build/ui/install.log --single-version-externally-managed install_data
+[8.464s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/ui' for CMake config files
+[8.465s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/ui/lib'
+[8.465s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/ui/bin'
+[8.465s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/ui/lib/pkgconfig/ui.pc'
+[8.466s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/ui/lib/python3.12/site-packages'
+[8.466s] Level 1:colcon.colcon_core.shell:create_environment_hook('ui', 'pythonpath')
+[8.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/ui/share/ui/hook/pythonpath.ps1'
+[8.467s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/andrewlh/VSCode/ros2_ws/install/ui/share/ui/hook/pythonpath.dsv'
+[8.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/andrewlh/VSCode/ros2_ws/install/ui/share/ui/hook/pythonpath.sh'
+[8.468s] Level 1:colcon.colcon_core.environment:checking '/home/andrewlh/VSCode/ros2_ws/install/ui/bin'
+[8.468s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ui)
+[8.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/ui/share/ui/package.ps1'
+[8.469s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/andrewlh/VSCode/ros2_ws/install/ui/share/ui/package.dsv'
+[8.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/ui/share/ui/package.sh'
+[8.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/ui/share/ui/package.bash'
+[8.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/andrewlh/VSCode/ros2_ws/install/ui/share/ui/package.zsh'
+[8.472s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/andrewlh/VSCode/ros2_ws/install/ui/share/colcon-core/packages/ui)
+[8.472s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.474s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.475s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.475s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.492s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.492s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.492s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.501s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.502s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andrewlh/VSCode/ros2_ws/install/local_setup.ps1'
+[8.503s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/andrewlh/VSCode/ros2_ws/install/_local_setup_util_ps1.py'
+[8.505s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andrewlh/VSCode/ros2_ws/install/setup.ps1'
+[8.506s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andrewlh/VSCode/ros2_ws/install/local_setup.sh'
+[8.507s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/andrewlh/VSCode/ros2_ws/install/_local_setup_util_sh.py'
+[8.507s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andrewlh/VSCode/ros2_ws/install/setup.sh'
+[8.508s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andrewlh/VSCode/ros2_ws/install/local_setup.bash'
+[8.509s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andrewlh/VSCode/ros2_ws/install/setup.bash'
+[8.510s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/andrewlh/VSCode/ros2_ws/install/local_setup.zsh'
+[8.511s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/andrewlh/VSCode/ros2_ws/install/setup.zsh'

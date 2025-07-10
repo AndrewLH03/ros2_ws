@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: servo-control
+Version: 0.0.0
+Summary: Servo control package for Dynamixel XL330-288 servos
+Maintainer: ROS2 Developer
+Maintainer-email: user@example.com
+License: MIT

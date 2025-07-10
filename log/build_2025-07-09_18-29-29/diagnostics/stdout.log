@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/diagnostics/diagnostics.egg-info/PKG-INFO
+writing dependency_links to ../../build/diagnostics/diagnostics.egg-info/dependency_links.txt
+writing entry points to ../../build/diagnostics/diagnostics.egg-info/entry_points.txt
+writing requirements to ../../build/diagnostics/diagnostics.egg-info/requires.txt
+writing top-level names to ../../build/diagnostics/diagnostics.egg-info/top_level.txt
+reading manifest file '../../build/diagnostics/diagnostics.egg-info/SOURCES.txt'
+writing manifest file '../../build/diagnostics/diagnostics.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics-0.1.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/diagnostics/diagnostics.egg-info to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics-0.1.0-py3.12.egg-info
+running install_scripts
+Installing emergency_stop_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+Installing error_handler_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+Installing health_monitor_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+Installing logger_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+Installing network_monitor_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+Installing resource_monitor_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+Installing system_metrics_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+Installing watchdog_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/diagnostics/install.log'

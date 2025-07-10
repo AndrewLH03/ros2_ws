@@ -1,0 +1,23 @@
+[1.031s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/servo_control': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/servo_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/servo_control build --build-base /home/andrewlh/VSCode/ros2_ws/build/servo_control/build install --record /home/andrewlh/VSCode/ros2_ws/build/servo_control/install.log --single-version-externally-managed install_data
+[1.375s] running egg_info
+[1.399s] writing ../../build/servo_control/servo_control.egg-info/PKG-INFO
+[1.399s] writing dependency_links to ../../build/servo_control/servo_control.egg-info/dependency_links.txt
+[1.400s] writing entry points to ../../build/servo_control/servo_control.egg-info/entry_points.txt
+[1.400s] writing requirements to ../../build/servo_control/servo_control.egg-info/requires.txt
+[1.400s] writing top-level names to ../../build/servo_control/servo_control.egg-info/top_level.txt
+[1.449s] reading manifest file '../../build/servo_control/servo_control.egg-info/SOURCES.txt'
+[1.450s] writing manifest file '../../build/servo_control/servo_control.egg-info/SOURCES.txt'
+[1.450s] running build
+[1.450s] running build_py
+[1.451s] running install
+[1.458s] running install_lib
+[1.482s] running install_data
+[1.483s] running install_egg_info
+[1.507s] removing '/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/python3.12/site-packages/servo_control-0.0.0-py3.12.egg-info' (and everything under it)
+[1.508s] Copying ../../build/servo_control/servo_control.egg-info to /home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/python3.12/site-packages/servo_control-0.0.0-py3.12.egg-info
+[1.509s] running install_scripts
+[1.684s] Installing finger_servo_controller_node script to /home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/servo_control
+[1.684s] Installing manual_servo_control_node script to /home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/servo_control
+[1.685s] Installing servo_interface_node script to /home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/servo_control
+[1.685s] writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/servo_control/install.log'
+[1.731s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/servo_control' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/servo_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/servo_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/servo_control build --build-base /home/andrewlh/VSCode/ros2_ws/build/servo_control/build install --record /home/andrewlh/VSCode/ros2_ws/build/servo_control/install.log --single-version-externally-managed install_data

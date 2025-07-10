@@ -1,0 +1,28 @@
+[3.143s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/diagnostics': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/diagnostics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/diagnostics build --build-base /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build install --record /home/andrewlh/VSCode/ros2_ws/build/diagnostics/install.log --single-version-externally-managed install_data
+[3.822s] running egg_info
+[3.878s] writing ../../build/diagnostics/diagnostics.egg-info/PKG-INFO
+[3.879s] writing dependency_links to ../../build/diagnostics/diagnostics.egg-info/dependency_links.txt
+[3.884s] writing entry points to ../../build/diagnostics/diagnostics.egg-info/entry_points.txt
+[3.884s] writing requirements to ../../build/diagnostics/diagnostics.egg-info/requires.txt
+[3.884s] writing top-level names to ../../build/diagnostics/diagnostics.egg-info/top_level.txt
+[3.988s] reading manifest file '../../build/diagnostics/diagnostics.egg-info/SOURCES.txt'
+[3.991s] writing manifest file '../../build/diagnostics/diagnostics.egg-info/SOURCES.txt'
+[3.992s] running build
+[3.992s] running build_py
+[3.992s] running install
+[4.007s] running install_lib
+[4.064s] running install_data
+[4.064s] running install_egg_info
+[4.120s] removing '/home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics-0.1.0-py3.12.egg-info' (and everything under it)
+[4.120s] Copying ../../build/diagnostics/diagnostics.egg-info to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics-0.1.0-py3.12.egg-info
+[4.123s] running install_scripts
+[4.513s] Installing emergency_stop_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[4.514s] Installing error_handler_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[4.515s] Installing health_monitor_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[4.519s] Installing logger_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[4.520s] Installing network_monitor_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[4.520s] Installing resource_monitor_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[4.520s] Installing system_metrics_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[4.520s] Installing watchdog_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[4.520s] writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/diagnostics/install.log'
+[4.637s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/diagnostics' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/diagnostics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/diagnostics build --build-base /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build install --record /home/andrewlh/VSCode/ros2_ws/build/diagnostics/install.log --single-version-externally-managed install_data

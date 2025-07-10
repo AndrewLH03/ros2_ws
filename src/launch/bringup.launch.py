@@ -39,6 +39,18 @@ def generate_launch_description():
         description='Default control mode'
     )
     
+    enable_servos = DeclareLaunchArgument(
+        'enable_servos',
+        default_value='true',
+        description='Enable servo control system'
+    )
+    
+    servo_hardware = DeclareLaunchArgument(
+        'servo_hardware',
+        default_value='false',
+        description='Enable actual servo hardware (requires Dynamixel SDK)'
+    )
+    
     camera_device = DeclareLaunchArgument(
         'camera_device',
         default_value='0',
@@ -76,6 +88,16 @@ def generate_launch_description():
         }.items()
     )
     
+    # Include servo control launch file
+    servo_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(launch_dir, 'servo_control.launch.py')
+        ),
+        launch_arguments={
+            'enable_hardware': LaunchConfiguration('servo_hardware')
+        }.items()
+    )
+    
     # Include diagnostics (if needed)
     diagnostics_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -88,13 +110,16 @@ def generate_launch_description():
         use_camera,
         enable_dashboard,
         default_mode,
+        enable_servos,
+        servo_hardware,
         camera_device,
         
         # Core system components
         GroupAction([
             perception_launch,
             control_launch,
-            ui_launch
+            ui_launch,
+            servo_launch
         ]),
         
         # Optional diagnostics

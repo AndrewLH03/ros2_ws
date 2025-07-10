@@ -1,0 +1,24 @@
+[3.367s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/cr3_interface': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/cr3_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cr3_interface build --build-base /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build install --record /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/install.log --single-version-externally-managed install_data
+[3.995s] running egg_info
+[4.043s] writing ../../build/cr3_interface/cr3_interface.egg-info/PKG-INFO
+[4.044s] writing dependency_links to ../../build/cr3_interface/cr3_interface.egg-info/dependency_links.txt
+[4.045s] writing entry points to ../../build/cr3_interface/cr3_interface.egg-info/entry_points.txt
+[4.050s] writing requirements to ../../build/cr3_interface/cr3_interface.egg-info/requires.txt
+[4.051s] writing top-level names to ../../build/cr3_interface/cr3_interface.egg-info/top_level.txt
+[4.187s] reading manifest file '../../build/cr3_interface/cr3_interface.egg-info/SOURCES.txt'
+[4.190s] writing manifest file '../../build/cr3_interface/cr3_interface.egg-info/SOURCES.txt'
+[4.190s] running build
+[4.191s] running build_py
+[4.191s] running install
+[4.219s] running install_lib
+[4.277s] running install_data
+[4.286s] running install_egg_info
+[4.342s] removing '/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface-0.1.0-py3.12.egg-info' (and everything under it)
+[4.342s] Copying ../../build/cr3_interface/cr3_interface.egg-info to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages/cr3_interface-0.1.0-py3.12.egg-info
+[4.344s] running install_scripts
+[4.750s] Installing cr3_controller_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/cr3_interface
+[4.750s] Installing hand_controller_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/cr3_interface
+[4.752s] Installing joint_state_publisher_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/cr3_interface
+[4.754s] Installing tf_broadcaster_node script to /home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/cr3_interface
+[4.764s] writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/cr3_interface/install.log'
+[4.973s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/cr3_interface' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/cr3_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/cr3_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cr3_interface build --build-base /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/build install --record /home/andrewlh/VSCode/ros2_ws/build/cr3_interface/install.log --single-version-externally-managed install_data

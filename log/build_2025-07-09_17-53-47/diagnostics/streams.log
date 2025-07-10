@@ -1,0 +1,65 @@
+[5.128s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/diagnostics': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/diagnostics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/diagnostics build --build-base /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build install --record /home/andrewlh/VSCode/ros2_ws/build/diagnostics/install.log --single-version-externally-managed install_data
+[6.119s] running egg_info
+[6.119s] creating ../../build/diagnostics/diagnostics.egg-info
+[6.195s] writing ../../build/diagnostics/diagnostics.egg-info/PKG-INFO
+[6.196s] writing dependency_links to ../../build/diagnostics/diagnostics.egg-info/dependency_links.txt
+[6.210s] writing entry points to ../../build/diagnostics/diagnostics.egg-info/entry_points.txt
+[6.218s] writing requirements to ../../build/diagnostics/diagnostics.egg-info/requires.txt
+[6.219s] writing top-level names to ../../build/diagnostics/diagnostics.egg-info/top_level.txt
+[6.219s] writing manifest file '../../build/diagnostics/diagnostics.egg-info/SOURCES.txt'
+[6.348s] reading manifest file '../../build/diagnostics/diagnostics.egg-info/SOURCES.txt'
+[6.349s] writing manifest file '../../build/diagnostics/diagnostics.egg-info/SOURCES.txt'
+[6.354s] running build
+[6.355s] running build_py
+[6.356s] creating /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build
+[6.356s] creating /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib
+[6.356s] creating /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics
+[6.357s] copying diagnostics/__init__.py -> /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics
+[6.357s] copying diagnostics/resource_monitor_node.py -> /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics
+[6.357s] copying diagnostics/health_monitor_node.py -> /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics
+[6.357s] copying diagnostics/watchdog_node.py -> /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics
+[6.357s] copying diagnostics/network_monitor_node.py -> /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics
+[6.358s] copying diagnostics/system_metrics_node.py -> /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics
+[6.358s] copying diagnostics/error_handler_node.py -> /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics
+[6.358s] copying diagnostics/logger_node.py -> /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics
+[6.359s] copying diagnostics/emergency_stop_node.py -> /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics
+[6.359s] running install
+[6.384s] running install_lib
+[6.444s] creating /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics
+[6.446s] copying /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics/__init__.py -> /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics
+[6.461s] copying /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics/resource_monitor_node.py -> /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics
+[6.461s] copying /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics/health_monitor_node.py -> /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics
+[6.462s] copying /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics/watchdog_node.py -> /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics
+[6.463s] copying /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics/network_monitor_node.py -> /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics
+[6.463s] copying /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics/system_metrics_node.py -> /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics
+[6.463s] copying /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics/error_handler_node.py -> /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics
+[6.463s] copying /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics/logger_node.py -> /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics
+[6.463s] copying /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build/lib/diagnostics/emergency_stop_node.py -> /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics
+[6.478s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics/__init__.py to __init__.cpython-312.pyc
+[6.478s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics/resource_monitor_node.py to resource_monitor_node.cpython-312.pyc
+[6.479s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics/health_monitor_node.py to health_monitor_node.cpython-312.pyc
+[6.479s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics/watchdog_node.py to watchdog_node.cpython-312.pyc
+[6.479s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics/network_monitor_node.py to network_monitor_node.cpython-312.pyc
+[6.479s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics/system_metrics_node.py to system_metrics_node.cpython-312.pyc
+[6.486s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics/error_handler_node.py to error_handler_node.cpython-312.pyc
+[6.487s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics/logger_node.py to logger_node.cpython-312.pyc
+[6.488s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics/emergency_stop_node.py to emergency_stop_node.cpython-312.pyc
+[6.498s] running install_data
+[6.499s] creating /home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/ament_index
+[6.499s] creating /home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/ament_index/resource_index
+[6.500s] creating /home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/ament_index/resource_index/packages
+[6.500s] copying resource/diagnostics -> /home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/ament_index/resource_index/packages
+[6.501s] copying package.xml -> /home/andrewlh/VSCode/ros2_ws/install/diagnostics/share/diagnostics
+[6.501s] running install_egg_info
+[6.624s] Copying ../../build/diagnostics/diagnostics.egg-info to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages/diagnostics-0.1.0-py3.12.egg-info
+[6.624s] running install_scripts
+[7.178s] Installing emergency_stop_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[7.180s] Installing error_handler_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[7.181s] Installing health_monitor_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[7.183s] Installing logger_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[7.183s] Installing network_monitor_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[7.186s] Installing resource_monitor_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[7.186s] Installing system_metrics_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[7.186s] Installing watchdog_node script to /home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/diagnostics
+[7.191s] writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/diagnostics/install.log'
+[7.385s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/diagnostics' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/diagnostics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/diagnostics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/diagnostics build --build-base /home/andrewlh/VSCode/ros2_ws/build/diagnostics/build install --record /home/andrewlh/VSCode/ros2_ws/build/diagnostics/install.log --single-version-externally-managed install_data

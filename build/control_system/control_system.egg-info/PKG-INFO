@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: control-system
+Version: 0.0.1
+Summary: Unified control system for all control types (manual, perception, future modes)
+Maintainer: andrewlh
+Maintainer-email: andrew@example.com
+License: MIT

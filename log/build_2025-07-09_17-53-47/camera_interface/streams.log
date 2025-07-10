@@ -1,0 +1,41 @@
+[5.007s] Invoking command in '/home/andrewlh/VSCode/ros2_ws/src/camera_interface': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/camera_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_interface build --build-base /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build install --record /home/andrewlh/VSCode/ros2_ws/build/camera_interface/install.log --single-version-externally-managed install_data
+[6.006s] running egg_info
+[6.006s] creating ../../build/camera_interface/camera_interface.egg-info
+[6.103s] writing ../../build/camera_interface/camera_interface.egg-info/PKG-INFO
+[6.108s] writing dependency_links to ../../build/camera_interface/camera_interface.egg-info/dependency_links.txt
+[6.109s] writing entry points to ../../build/camera_interface/camera_interface.egg-info/entry_points.txt
+[6.110s] writing requirements to ../../build/camera_interface/camera_interface.egg-info/requires.txt
+[6.112s] writing top-level names to ../../build/camera_interface/camera_interface.egg-info/top_level.txt
+[6.112s] writing manifest file '../../build/camera_interface/camera_interface.egg-info/SOURCES.txt'
+[6.276s] reading manifest file '../../build/camera_interface/camera_interface.egg-info/SOURCES.txt'
+[6.278s] writing manifest file '../../build/camera_interface/camera_interface.egg-info/SOURCES.txt'
+[6.279s] running build
+[6.279s] running build_py
+[6.279s] creating /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build
+[6.285s] creating /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build/lib
+[6.287s] creating /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build/lib/camera_interface
+[6.289s] copying camera_interface/__init__.py -> /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build/lib/camera_interface
+[6.290s] copying camera_interface/camera_info_node.py -> /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build/lib/camera_interface
+[6.291s] copying camera_interface/camera_node.py -> /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build/lib/camera_interface
+[6.293s] running install
+[6.326s] running install_lib
+[6.400s] creating /home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages/camera_interface
+[6.400s] copying /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build/lib/camera_interface/__init__.py -> /home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages/camera_interface
+[6.407s] copying /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build/lib/camera_interface/camera_info_node.py -> /home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages/camera_interface
+[6.415s] copying /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build/lib/camera_interface/camera_node.py -> /home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages/camera_interface
+[6.416s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages/camera_interface/__init__.py to __init__.cpython-312.pyc
+[6.416s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages/camera_interface/camera_info_node.py to camera_info_node.cpython-312.pyc
+[6.416s] byte-compiling /home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages/camera_interface/camera_node.py to camera_node.cpython-312.pyc
+[6.416s] running install_data
+[6.417s] creating /home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/ament_index
+[6.417s] creating /home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/ament_index/resource_index
+[6.418s] creating /home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/ament_index/resource_index/packages
+[6.418s] copying resource/camera_interface -> /home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/ament_index/resource_index/packages
+[6.419s] copying package.xml -> /home/andrewlh/VSCode/ros2_ws/install/camera_interface/share/camera_interface
+[6.420s] running install_egg_info
+[6.506s] Copying ../../build/camera_interface/camera_interface.egg-info to /home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages/camera_interface-0.1.0-py3.12.egg-info
+[6.521s] running install_scripts
+[7.054s] Installing camera_info_node script to /home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/camera_interface
+[7.095s] Installing camera_node script to /home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/camera_interface
+[7.095s] writing list of installed files to '/home/andrewlh/VSCode/ros2_ws/build/camera_interface/install.log'
+[7.407s] Invoked command in '/home/andrewlh/VSCode/ros2_ws/src/camera_interface' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/andrewlh/VSCode/ros2_ws/build/camera_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andrewlh/VSCode/ros2_ws/install/camera_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_interface build --build-base /home/andrewlh/VSCode/ros2_ws/build/camera_interface/build install --record /home/andrewlh/VSCode/ros2_ws/build/camera_interface/install.log --single-version-externally-managed install_data

@@ -23,7 +23,7 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from geometry_msgs.msg import PoseArray, Pose
-from std_msgs.msg import Float32, String, Float32MultiArray
+from std_msgs.msg import Float32, String
 import cv2
 import numpy as np
 from cv_bridge import CvBridge
@@ -31,13 +31,11 @@ import mediapipe as mp
 
 class HandPoseNode(Node):
     """
-    Enhanced hand pose detection using MediaPipe with finger position extraction.
+    Enhanced hand pose detection using MediaPipe.
     - Subscribes to camera/image topics
     - Runs MediaPipe hand pose estimation
     - Publishes hand pose data with confidence
     - Supports hand selection (left/right)
-    - Extracts finger positions and calculates servo commands
-    - Real-time finger curl and bend angle calculation
     """
     def __init__(self):
         """Initialize the enhanced hand pose node."""
@@ -88,29 +86,7 @@ class HandPoseNode(Node):
             '/perception/hand_confidence',
             10)
         
-        # Additional publishers for finger data
-        self.finger_angles_pub = self.create_publisher(
-            Float32MultiArray,
-            '/perception/finger_angles',
-            10)
-        
-        self.finger_curl_pub = self.create_publisher(
-            Float32MultiArray,
-            '/perception/finger_curl_ratios',
-            10)
-        
-
-        
-        # Finger processing configuration
-        self.finger_landmarks = {
-            'thumb': [1, 2, 3, 4],      # Thumb joints
-            'index': [5, 6, 7, 8],      # Index finger joints  
-            'middle': [9, 10, 11, 12],  # Middle finger joints
-            'ring': [13, 14, 15, 16],   # Ring finger joints
-            'pinky': [17, 18, 19, 20]   # Pinky finger joints
-        }
-        
-        self.get_logger().info(f'Enhanced hand pose node with finger extraction started (tracking {self.preferred_hand} hand)')
+        self.get_logger().info(f'Enhanced hand pose node started with MediaPipe (tracking {self.preferred_hand} hand)')
 
     def handle_hand_selection(self, msg):
         """Handle hand selection commands from UI."""
@@ -177,10 +153,6 @@ class HandPoseNode(Node):
                     pose.position.z = landmark.z
                     pose.orientation.w = 1.0
                     pose_array.poses.append(pose)
-                
-                # NEW: Extract finger positions and publish finger data
-                finger_data = self.extract_finger_positions(preferred_hand_landmarks)
-                self.publish_finger_data(finger_data)
             else:
                 self.get_logger().debug(f'Preferred hand ({self.preferred_hand}) not detected, ignoring other hands')
         
@@ -197,91 +169,6 @@ class HandPoseNode(Node):
             self.get_logger().debug(f'{self.preferred_hand} hand detected with confidence: {confidence:.2f}, landmarks: {landmark_count}')
         else:
             self.get_logger().debug(f'No {self.preferred_hand.lower()} hand detected')
-
-    def extract_finger_positions(self, hand_landmarks):
-        """Extract finger positions and angles from hand landmarks."""
-        landmarks = hand_landmarks.landmark
-        finger_data = {}
-        
-        for finger_name, indices in self.finger_landmarks.items():
-            curl_ratio = self.calculate_finger_curl(landmarks, indices)
-            bend_angle = self.calculate_finger_bend(landmarks, indices)
-            
-            finger_data[finger_name] = {
-                'curl_ratio': curl_ratio,
-                'bend_angle': bend_angle
-            }
-        
-        return finger_data
-    
-    def calculate_finger_curl(self, landmarks, finger_indices):
-        """Calculate how curled/closed a finger is (0=open, 1=closed)."""
-        # Get key points
-        mcp = landmarks[finger_indices[0]]  # Base joint (metacarpophalangeal)
-        tip = landmarks[finger_indices[-1]]  # Fingertip
-        
-        # Calculate current distance between base and tip
-        current_dist = np.sqrt(
-            (tip.x - mcp.x)**2 + 
-            (tip.y - mcp.y)**2 + 
-            (tip.z - mcp.z)**2
-        )
-        
-        # Estimate maximum distance when finger is fully extended
-        # This is a simplified estimation - could be calibrated per user
-        max_dist = 0.12  # Approximately 12cm for average finger in normalized coordinates
-        
-        # Calculate curl ratio (1.0 = fully closed, 0.0 = fully open)
-        curl_ratio = 1.0 - np.clip(current_dist / max_dist, 0.0, 1.0)
-        return curl_ratio
-    
-    def calculate_finger_bend(self, landmarks, finger_indices):
-        """Calculate finger bend angle in radians."""
-        wrist = landmarks[0]  # Wrist landmark
-        mcp = landmarks[finger_indices[0]]  # Metacarpophalangeal joint
-        tip = landmarks[finger_indices[-1]]  # Fingertip
-        
-        # Create vectors
-        vec_base = np.array([mcp.x - wrist.x, mcp.y - wrist.y, mcp.z - wrist.z])
-        vec_finger = np.array([tip.x - mcp.x, tip.y - mcp.y, tip.z - mcp.z])
-        
-        # Normalize vectors to avoid magnitude effects
-        vec_base_norm = np.linalg.norm(vec_base)
-        vec_finger_norm = np.linalg.norm(vec_finger)
-        
-        if vec_base_norm < 1e-8 or vec_finger_norm < 1e-8:
-            return 0.0  # Avoid division by zero
-        
-        vec_base = vec_base / vec_base_norm
-        vec_finger = vec_finger / vec_finger_norm
-        
-        # Calculate angle between vectors
-        dot_product = np.clip(np.dot(vec_base, vec_finger), -1.0, 1.0)
-        angle = np.arccos(dot_product)
-        
-        return angle
-    
-    def publish_finger_data(self, finger_data):
-        """Publish all finger-related data to respective topics."""
-        fingers = ['thumb', 'index', 'middle', 'ring', 'pinky']
-        
-        # Extract arrays from finger data
-        curl_ratios = [finger_data[f]['curl_ratio'] for f in fingers]
-        bend_angles = [finger_data[f]['bend_angle'] for f in fingers] 
-        
-        # Publish curl ratios
-        curl_msg = Float32MultiArray()
-        curl_msg.data = curl_ratios
-        self.finger_curl_pub.publish(curl_msg)
-        
-        # Publish bend angles
-        angle_msg = Float32MultiArray()
-        angle_msg.data = bend_angles
-        self.finger_angles_pub.publish(angle_msg)
-        
-        # Debug logging for development
-        self.get_logger().debug(f'Finger curls: {[f"{c:.2f}" for c in curl_ratios]}')
-        self.get_logger().debug(f'Finger angles: {[f"{a:.2f}" for a in bend_angles]}')
 
 def main(args=None):
     rclpy.init(args=args)

@@ -11,10 +11,6 @@ log/
 **/rclcpp/
 **/ros2/
 
-# Launch files and folders
-src/launch/
-src/ui/*.launch.py
-
 # Python cache
 __pycache__/
 *.pyc

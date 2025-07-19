@@ -78,7 +78,7 @@ source /opt/ros/jazzy/setup.bash
 export PATH="/usr/bin:$PATH"
 
 # Move to workspace root
-cd ~/VSCode/ros2_ws
+cd /home/andrewlh/Desktop/robotics/arm/ros2_ws
 
 # Build the workspace
 echo "🔨 Building workspace..."
